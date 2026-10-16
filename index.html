@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Alumni Startup Night 2027 a Milano: speech, 10 startup selezionate in Lightning Pitch e aperinetwork con investitori, coach e alumni delle Grandes Écoles francesi.">
+<meta name="theme-color" content="#0A1226">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alumni Startup Night 2027 · Milano">
+<meta property="og:description" content="Oltre il pitch a comando: dove il business si fa a tavola. Speech, 10 startup selezionate e aperinetwork.">
+<meta property="og:image" content="/og-image.jpg">
+<meta property="og:locale" content="it_IT">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+<title>Alumni Startup Night</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Schibsted+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: "la nuit parisienne" — navy night, gold hairline arcades (Haussmann windows), one table line as the brand's recurring motif. Single committed dark look. */
+:root{
+  --nuit:#0A1226;        /* page ground */
+  --nuit-2:#111B36;      /* raised bands */
+  --nuit-3:#1A2547;      /* cards on bands */
+  --or:#CDA85E;          /* gold accent */
+  --or-pale:#E9D7AA;
+  --craie:#F2EEE6;       /* primary text */
+  --brume:#A9B1C6;       /* secondary text */
+  --trait:rgba(205,168,94,.28);
+  --trait-soft:rgba(242,238,230,.10);
+  --b-startup:#E3B53E; --b-inv:#3F9663; --b-coach:#C9483C; --b-alumni:#4A7BC0;
+  --f-display:"Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+  --f-body:"Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --f-mono:"DM Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --s-hero:clamp(3.4rem, 11vw, 9.5rem);
+  --s-h2:clamp(2rem, 4.6vw, 3.4rem);
+  --s-h3:1.35rem;
+  --s-body:1.0625rem;
+  --s-small:.875rem;
+  --s-label:.72rem;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--nuit);color:var(--craie);font-family:var(--f-body);font-size:var(--s-body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--nuit)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--or);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1200px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:500;text-wrap:balance;margin:0;line-height:1.05}
+h2{font-size:var(--s-h2)}
+h2 em,h1 em{font-style:italic;color:var(--or-pale)}
+h3{font-size:var(--s-h3);font-weight:600;line-height:1.2}
+p{margin:0}
+.label{font-family:var(--f-mono);font-size:var(--s-label);letter-spacing:.16em;text-transform:uppercase;color:var(--or)}
+.lede{color:var(--brume);max-width:62ch}
+section{padding-block:clamp(72px,10vw,128px)}
+.sec-head{display:grid;gap:18px;margin-bottom:48px;max-width:780px}
+
+/* language */
+body.fr .l-it, body:not(.fr) .l-fr{display:none!important}
+
+/* ticker */
+.ticker{background:var(--or);color:var(--nuit);font-family:var(--f-mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase}
+.ticker .wrap{display:flex;gap:18px;justify-content:space-between;padding-block:9px;flex-wrap:wrap}
+.ticker b{font-weight:500}
+@media (max-width:640px){.ticker .wrap>span+span{display:none!important}}
+
+/* nav */
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,18,38,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--trait-soft)}
+.nav .wrap{display:flex;align-items:center;gap:24px;padding-block:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.brand svg{width:40px;height:40px}
+.brand span{font-family:var(--f-display);font-size:1.12rem;line-height:1}
+.brand small{display:block;font-family:var(--f-mono);font-size:.58rem;letter-spacing:.18em;color:var(--brume);margin-top:4px;text-transform:uppercase}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0 0 0 auto;padding:0}
+.nav ul a{text-decoration:none;font-size:.9rem;color:var(--brume)}
+.nav ul a:hover{color:var(--craie)}
+.langs{display:flex;border:1px solid var(--trait);border-radius:999px;overflow:hidden}
+.langs button{background:none;border:0;color:var(--brume);font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;padding:7px 11px;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--or);color:var(--nuit)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-body);font-weight:600;font-size:.95rem;text-decoration:none;padding:14px 22px;border-radius:2px;border:1px solid var(--or);cursor:pointer;transition:background .2s,color .2s}
+.btn-or{background:var(--or);color:var(--nuit)}
+.btn-or:hover{background:var(--or-pale)}
+.btn-ghost{background:transparent;color:var(--craie)}
+.btn-ghost:hover{background:rgba(205,168,94,.12)}
+.nav .btn{padding:10px 16px;font-size:.85rem}
+@media (max-width:980px){.nav ul{display:none}.langs{margin-left:auto}}
+@media (max-width:520px){.nav .btn{display:none}}
+
+/* hero */
+.hero{position:relative;padding-block:clamp(64px,9vw,120px) 56px;overflow:hidden;isolation:isolate}
+.arcade{position:absolute;inset:0;z-index:-1;opacity:.9;pointer-events:none}
+.arcade svg{width:100%;height:100%}
+.arcade path{fill:none;stroke:var(--trait);stroke-width:1}
+.arcade .draw{stroke-dasharray:1400;stroke-dashoffset:0;animation:draw 2.4s cubic-bezier(.6,0,.2,1) both}
+@keyframes draw{from{stroke-dashoffset:1400}to{stroke-dashoffset:0}}
+.hero-grid{display:grid;gap:28px;position:relative}
+.hero-seal{position:absolute;right:max(16px,env(safe-area-inset-right,0px));top:clamp(40px,6vw,96px);width:clamp(240px,27vw,360px);height:auto;aspect-ratio:1;animation:spin-in 1.6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes spin-in{from{transform:rotate(-24deg);opacity:.0}to{transform:none;opacity:1}}
+@media (max-width:1020px){.hero-seal{display:none}}
+.hero h1{font-size:var(--s-hero);font-weight:500;letter-spacing:-.02em;line-height:.9}
+.hero h1 .row2{display:block;font-style:italic;color:var(--or-pale);padding-left:clamp(0px,8vw,140px)}
+.hero .presents{display:flex;align-items:center;gap:14px}
+.hero .presents::after{content:"";height:1px;width:64px;background:var(--or)}
+.tagline{font-family:var(--f-display);font-style:italic;font-size:clamp(1.25rem,2.4vw,1.7rem);color:var(--craie);max-width:30ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:8px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--trait);border-bottom:1px solid var(--trait);margin-top:56px}
+.facts>div{padding:20px 20px 20px 0;display:grid;gap:6px;min-width:0}
+.facts>div+div{padding-left:20px;border-left:1px solid var(--trait-soft)}
+.facts strong{font-family:var(--f-display);font-size:1.3rem;font-weight:500}
+.facts span{font-size:var(--s-small);color:var(--brume)}
+@media (max-width:760px){.facts{grid-template-columns:1fr 1fr}.facts>div:nth-child(3){padding-left:0;border-left:0}.facts>div:nth-child(n+3){border-top:1px solid var(--trait-soft)}}
+
+/* numbers */
+.numbers{background:var(--nuit-2);padding-block:56px}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.num-grid div{display:grid;gap:6px;min-width:0}
+.num-grid strong{font-family:var(--f-display);font-size:clamp(2.4rem,5vw,3.6rem);font-weight:500;line-height:1;color:var(--or-pale);font-variant-numeric:lining-nums tabular-nums}
+.num-grid span{font-size:var(--s-small);color:var(--brume);max-width:22ch}
+@media (max-width:860px){.num-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* save the date */
+.std{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--trait);border:1px solid var(--trait)}
+.count div{background:var(--nuit);padding:22px 10px;text-align:center;display:grid;gap:4px}
+.count strong{font-family:var(--f-display);font-size:clamp(2.2rem,5vw,3.4rem);font-weight:500;font-variant-numeric:tabular-nums;line-height:1}
+.count span{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.16em;color:var(--brume);text-transform:uppercase}
+.count-note{margin-top:14px;font-size:var(--s-small);color:var(--brume)}
+@media (max-width:860px){.std{grid-template-columns:1fr;gap:32px}}
+
+/* format: three acts */
+.acts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--trait)}
+.acts{column-gap:56px}
+.act{padding:32px 0 8px;display:grid;gap:14px;align-content:start;min-width:0;position:relative}
+.act+.act::before{content:"";position:absolute;left:-28px;top:32px;bottom:0;border-left:1px solid var(--trait-soft)}
+.act .roman{font-family:var(--f-display);font-style:italic;font-size:3.2rem;line-height:1;color:var(--or)}
+.act p{color:var(--brume)}
+.act .meta{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.08em;color:var(--or-pale)}
+@media (max-width:860px){.acts{grid-template-columns:1fr}.act+.act::before{display:none}.act+.act{border-top:1px solid var(--trait-soft)}}
+
+/* talks */
+.talks-band{background:var(--nuit-2)}
+.talks{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.talk{background:var(--nuit-3);border:1px solid var(--trait-soft);padding:26px;display:grid;grid-template-rows:auto auto 1fr auto;gap:16px;min-width:0}
+.talk.key{grid-column:span 2;background:linear-gradient(160deg,#1E2A52 0%,var(--nuit-3) 70%);border-color:var(--trait)}
+.talk .kind{display:flex;justify-content:space-between;gap:12px}
+.talk h3{font-size:1.4rem}
+.talk.key h3{font-size:clamp(1.6rem,3vw,2.2rem)}
+.talk p{color:var(--brume);font-size:.97rem}
+.who{display:flex;align-items:center;gap:14px;border-top:1px solid var(--trait-soft);padding-top:16px}
+.avatar{width:48px;height:48px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;font-family:var(--f-display);font-size:1.05rem;background:var(--nuit);border:1px solid var(--trait);color:var(--or-pale)}
+.avatar.tbc{border-style:dashed;color:var(--brume)}
+.who b{display:block;font-weight:600;font-size:.95rem}
+.who small{color:var(--brume);font-size:.82rem}
+.chip{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border:1px solid var(--trait);border-radius:999px;color:var(--or-pale);white-space:nowrap}
+.chip.tbc{border-style:dashed;color:var(--brume);border-color:var(--trait-soft)}
+.talk.wide{grid-column:span 2}
+.cta-card{background:transparent;border:1px dashed var(--trait)}
+.talks-foot{margin-top:28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+@media (max-width:980px){.talks{grid-template-columns:1fr 1fr}.talk.wide{grid-column:auto}}
+@media (max-width:640px){.talks{grid-template-columns:1fr}.talk.key,.talk.wide{grid-column:auto}}
+
+/* agenda */
+.agenda{display:grid;border-top:1px solid var(--trait)}
+.slot{display:grid;grid-template-columns:120px 1fr auto;gap:24px;padding-block:22px;border-bottom:1px solid var(--trait-soft);align-items:baseline}
+.slot time{font-family:var(--f-display);font-size:1.6rem;font-variant-numeric:tabular-nums;color:var(--or-pale)}
+.slot h3{font-family:var(--f-body);font-size:1.08rem;font-weight:600}
+.slot p{color:var(--brume);font-size:.95rem;margin-top:4px;max-width:64ch}
+.slot .dur{font-family:var(--f-mono);font-size:.74rem;color:var(--brume);white-space:nowrap}
+.slot.hl time{color:var(--or)}
+.agenda-note{margin-top:16px;font-size:var(--s-small);color:var(--brume)}
+@media (max-width:640px){.slot{grid-template-columns:1fr;gap:6px}.slot .dur{order:-1}}
+
+/* audiences */
+.aud{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card-a{border:1px solid var(--trait-soft);background:var(--nuit-2);display:grid;grid-template-rows:auto auto 1fr;min-width:0}
+.card-a .badge{height:8px;background:var(--c)}
+.card-a .top{padding:24px 24px 0;display:grid;gap:10px}
+.card-a .dot{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brume)}
+.card-a .dot::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--c)}
+.card-a h3{font-size:1.5rem}
+.card-a ul{list-style:none;margin:0;padding:18px 24px 26px;display:grid;gap:12px;align-content:start}
+.card-a li{font-size:.94rem;color:var(--brume);padding-left:18px;position:relative}
+.card-a li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:1px;background:var(--or)}
+@media (max-width:1040px){.aud{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.aud{grid-template-columns:1fr}}
+
+/* institutions */
+.inst-band{background:var(--nuit-2)}
+.schools{display:flex;flex-wrap:wrap;gap:12px 40px;align-items:baseline;border-block:1px solid var(--trait);padding-block:28px;margin-bottom:56px}
+.schools span{font-family:var(--f-display);font-size:clamp(1.4rem,2.6vw,2rem);color:var(--craie)}
+.schools span:nth-child(even){font-style:italic;color:var(--or-pale)}
+.bridge{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.bridge .col{display:grid;gap:18px;align-content:start}
+.inroom{display:flex;flex-wrap:wrap;gap:10px}
+.inroom span{font-size:.9rem;padding:8px 14px;border:1px solid var(--trait-soft);background:var(--nuit-3)}
+.flagbar{display:flex;height:4px;width:120px}
+.flagbar i{flex:1}
+@media (max-width:860px){.bridge{grid-template-columns:1fr;gap:40px}}
+
+/* edizione 2026 */
+.ed{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:92px;gap:10px}
+.ph{border:1px solid var(--trait-soft);background:repeating-linear-gradient(135deg,var(--nuit-2) 0 10px,var(--nuit-3) 10px 20px);display:flex;align-items:flex-end;padding:10px;font-family:var(--f-mono);font-size:.62rem;letter-spacing:.12em;color:var(--brume);text-transform:uppercase}
+.ph.a{grid-column:span 4;grid-row:span 3}.ph.b{grid-column:span 2;grid-row:span 2}.ph.c{grid-column:span 2;grid-row:span 1}.ph.d{grid-column:span 3;grid-row:span 2}.ph.e{grid-column:span 3;grid-row:span 2}
+.ed dl{display:grid;grid-template-columns:auto 1fr;gap:12px 24px;margin:0;border-top:1px solid var(--trait);padding-top:24px}
+.ed dt{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--or);padding-top:3px}
+.ed dd{margin:0;color:var(--brume)}
+@media (max-width:860px){.ed{grid-template-columns:1fr;gap:40px}}
+
+
+.band{margin:0;position:relative}
+.band img{display:block;width:100%;height:clamp(260px,42vw,560px);object-fit:cover;object-position:center 40%}
+.band figcaption{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:baseline;padding-block:14px;color:var(--brume);font-size:var(--s-small)}
+.act-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border:1px solid var(--trait-soft);max-width:100%}
+.gallery img.g{width:100%;height:100%;object-fit:cover;display:block;border:1px solid var(--trait-soft);min-width:0}
+.gallery .a{grid-column:span 4;grid-row:span 3}.gallery .b{grid-column:span 2;grid-row:span 2}.gallery .c{grid-column:span 2;grid-row:span 1}.gallery .d{grid-column:span 3;grid-row:span 2}.gallery .e{grid-column:span 3;grid-row:span 2}
+.recap{display:grid;gap:12px;margin-top:56px}
+.video{border:1px solid var(--trait);background:#000;aspect-ratio:16/9;max-width:100%}
+.video video{width:100%;height:100%;display:block}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.strip img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;border:1px solid var(--trait-soft)}
+.credit{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;color:var(--brume);text-transform:uppercase}
+@media (max-width:640px){.strip{grid-template-columns:1fr 1fr}.gallery{grid-auto-rows:64px}}
+
+/* accredito */
+.acc{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:start}
+.form{background:var(--nuit-2);border:1px solid var(--trait);padding:clamp(20px,4vw,36px);display:grid;gap:18px}
+.roles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;border:0;margin:0;padding:0}
+.roles legend{margin-bottom:10px}
+.roles label{display:flex;align-items:center;gap:10px;padding:12px 14px;border:1px solid var(--trait-soft);cursor:pointer;font-size:.92rem}
+.roles input{accent-color:var(--or)}
+.roles label:has(input:checked){border-color:var(--or);background:rgba(205,168,94,.08)}
+.roles .sw{width:10px;height:10px;border-radius:50%;background:var(--c);flex-shrink:0}
+.field{display:grid;gap:6px}
+.field label{font-size:.82rem;color:var(--brume)}
+.field input,.field textarea{background:var(--nuit);border:1px solid var(--trait-soft);color:var(--craie);font:inherit;font-size:.96rem;padding:12px 14px;border-radius:2px;width:100%}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--or)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.out{display:grid;gap:12px;border-top:1px solid var(--trait-soft);padding-top:18px}
+.out pre{white-space:pre-wrap;word-break:break-word;background:var(--nuit);border:1px solid var(--trait-soft);padding:14px;font-family:var(--f-mono);font-size:.8rem;color:var(--brume);margin:0;max-height:220px;overflow:auto}
+.mail{font-family:var(--f-mono);font-size:.9rem;color:var(--or-pale);user-select:all;word-break:break-all}
+.status{font-size:.85rem;color:var(--or-pale);min-height:1.2em}
+.price{display:flex;gap:18px;align-items:baseline;border-top:1px solid var(--trait);padding-top:22px;margin-top:8px}
+.price strong{font-family:var(--f-display);font-size:2.6rem;font-weight:500;color:var(--or-pale)}
+.price span{color:var(--brume);font-size:.92rem;max-width:36ch}
+@media (max-width:860px){.acc{grid-template-columns:1fr;gap:36px}}
+@media (max-width:480px){.roles,.two{grid-template-columns:1fr}}
+
+/* partners */
+.partner{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--trait)}
+.partner>div{padding:28px 28px 0 0;display:grid;gap:10px;align-content:start;min-width:0}
+.partner>div+div{padding-left:28px;border-left:1px solid var(--trait-soft)}
+.partner p{color:var(--brume);font-size:.95rem}
+.partner-cta{margin-top:40px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;padding:28px;border:1px solid var(--trait);background:var(--nuit-2)}
+@media (max-width:860px){.partner{grid-template-columns:1fr}.partner>div+div{padding-left:0;border-left:0;border-top:1px solid var(--trait-soft);padding-top:24px;margin-top:24px}}
+
+/* faq */
+.faq{display:grid;border-top:1px solid var(--trait);max-width:880px}
+.faq details{border-bottom:1px solid var(--trait-soft)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding-block:22px;font-family:var(--f-display);font-size:1.3rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--f-body);color:var(--or);font-size:1.4rem;line-height:1;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--brume);padding-bottom:22px;max-width:68ch}
+
+/* footer */
+footer{border-top:1px solid var(--trait);padding-block:56px 40px;background:var(--nuit)}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot-seal{width:132px;height:132px;display:block}
+.foot .motto{font-family:var(--f-display);font-style:italic;font-size:1.5rem;color:var(--or-pale)}
+.foot h4{margin:0 0 12px;font-family:var(--f-mono);font-weight:400;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--or)}
+.foot a{display:block;text-decoration:none;color:var(--brume);font-size:.92rem;padding-block:3px}
+.foot a:hover{color:var(--craie)}
+.legal{margin-top:48px;padding-top:20px;border-top:1px solid var(--trait-soft);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.8rem;color:var(--brume)}
+@media (max-width:760px){.foot{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+
+<!-- Logo "Le Sceau" (outlined paths) kept as symbols for reuse -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="mark" viewBox="0 0 64 64"><circle cx="32" cy="32" r="31" fill="#0A1226"/><circle cx="32" cy="32" r="27.5" fill="none" stroke="#CDA85E" stroke-width="1.6"/><path d="M19.964 44.493Q18.077 44.493 16.649 43.8895Q15.221 43.286 14.167000000000002 42.249L11.413 44.34H10.801V36.333H11.481000000000002Q11.940000000000001 37.727 12.645500000000002 39.061499999999995Q13.351 40.396 14.337 41.467Q15.323 42.538 16.649 43.1755Q17.975 43.813 19.726 43.813Q21.341 43.813 22.514000000000003 43.235Q23.687 42.657 24.316000000000003 41.6115Q24.945 40.566 24.945 39.155Q24.945 37.778 24.2055 36.843Q23.466 35.908 22.250500000000002 35.2365Q21.035000000000004 34.565 19.573 33.9615Q18.111 33.358 16.6575 32.661Q15.204 31.964 13.98 30.9695Q12.756 29.975 12.0165 28.5215Q11.277000000000001 27.067999999999998 11.277000000000001 24.959999999999997Q11.277000000000001 22.834999999999997 12.331000000000001 21.313499999999998Q13.385000000000002 19.791999999999998 15.119000000000002 18.976Q16.853 18.159999999999997 18.842 18.159999999999997Q20.355 18.159999999999997 21.655500000000004 18.644499999999997Q22.956000000000003 19.128999999999998 23.976 20.064L26.679000000000002 18.159999999999997H27.240000000000002V25.826999999999998H26.577Q25.897000000000002 23.668 24.8515 22.112499999999997Q23.806 20.557 22.369500000000002 19.7155Q20.933 18.874 19.097 18.874Q17.074 18.874 15.986 19.894Q14.898 20.913999999999998 14.898 22.58Q14.898 23.820999999999998 15.629 24.679499999999997Q16.36 25.538 17.567 26.201Q18.774 26.863999999999997 20.2275 27.484499999999997Q21.681 28.104999999999997 23.126 28.844499999999996Q24.571 29.584 25.778000000000002 30.612499999999997Q26.985000000000003 31.641 27.716 33.1115Q28.447000000000003 34.582 28.447000000000003 36.69Q28.447000000000003 39.07 27.325000000000003 40.821Q26.203000000000003 42.572 24.282000000000004 43.5325Q22.361 44.493 19.964 44.493Z" fill="#F2EEE6"/><path d="M47.997 44.34 37.984 19.281999999999996 32.595 43.337H36.386V44.0H28.532V43.337H31.898L37.338 19.162999999999997H33.972V18.499999999999996H42.234L49.765 37.693L53.998000000000005 19.162999999999997H50.071V18.499999999999996H58.112V19.162999999999997H54.69500000000001L48.966 44.34Z" fill="#E9D7AA"/></symbol>
+    <symbol id="sceau" viewBox="0 0 260 260"><circle cx="130" cy="130" r="122" fill="none" stroke="#CDA85E" stroke-width="2.4"/><circle cx="130" cy="130" r="111" fill="none" stroke="#CDA85E" stroke-width=".9"/><circle cx="130" cy="130" r="77" fill="none" stroke="#CDA85E" stroke-width=".9"/><path d="M40.06300050966774 125.40429475749656 32.24856898087001 122.31982200972716 32.37273539577686 120.87615179066424 40.59908407878936 119.17130587519316 40.48575758899343 120.48894139259185 38.514547919920474 120.86189807982683 38.29774941770217 123.38259211311129 40.17632699946367 124.08665924009786ZM34.02635086780532 121.78017716125296 37.347495650538804 123.023844251805 37.51699266136403 121.0531198257826 34.03226355422946 121.71143096034521Z M41.22965646534571 114.96108544510399 33.33346735630931 113.39497639579265 33.570621012347885 112.19926775928143 40.39518445658649 113.55283343761481 41.1670524880328 109.66114023387543 42.238678152830595 109.8736836048534Z M44.29999694742934 102.96873939696152Q44.0541874555999 103.74735993594476 43.54401249183866 104.25559887468442Q43.03383752807741 104.76383781342409 42.27054420683734 104.90877010192565Q41.50725088559727 105.05370239042723 40.509300617322985 104.7386507882233L35.640180627061596 103.20147593790958L36.0071638120464 102.039028372667L40.942082721095105 103.59697585609305Q41.819401638259315 103.87394429759102 42.42800380917889 103.60781940200255Q43.036605980098464 103.34169450641406 43.26510494433429 102.61790639975358Q43.49360390857011 101.8941182930931 43.1481217570736 101.32679021737559Q42.8026396055771 100.75946214165806 41.92532068841288 100.4824937001601L36.990401779364184 98.92454621673404L37.35738496434899 97.76209865149146L42.22650495461037 99.29927350180517Q43.224455222884664 99.61432510400911 43.76271168540764 100.18221443570346Q44.30096814793061 100.7501037673978 44.4233872935947 101.47011131268803Q44.54580643925879 102.19011885797828 44.29999694742934 102.96873939696152Z M46.474672423780795 96.35100843211977 39.11057300037481 93.09946423248297 39.6308200723167 91.92120832473802 43.628719110521885 91.86362768286853 40.97788838359481 88.87036713504125 41.4981354555367 87.6921112272963 48.86223487894267 90.94365542693309 48.39308350156651 92.00618977231025 43.15405276891482 89.69294832742577 45.25455107904754 92.05351030482218 44.86436577509112 92.93720223563089 41.71531321053872 92.97987770500049 46.94382380115696 95.28847408674262Z M50.71959541821433 87.30553804533453 43.756952887693664 83.26522753843228 44.35722759157628 82.23077779104064 51.15100844397551 82.2773849747525 46.04838613232251 79.31641456040842 46.63134521974698 78.31180470957615 53.59398775026765 82.35211521647841 52.993713046385025 83.38656496387004 46.199932193985795 83.33995778015819 51.302554505638795 86.30092819450226Z M56.18615602974594 78.45318395298321 55.316384426306904 77.81126623407285 56.354379035608765 76.40482704553312 51.616899663685494 72.90842415104264 50.592562878190236 74.2963575607858 49.722791274751195 73.65443984187543 52.4953295074917 69.89776674617065 53.36510111093074 70.53968446508101 52.34076432543548 71.92761787482415 57.07824369735875 75.42402076931464 58.11623830666061 74.01758158077492 58.98600991009965 74.65949929968528Z M71.00675555029619 62.21366756087558Q70.32943691292942 62.801756383652915 69.48159393577262 62.860173834691906Q68.63375095861582 62.918591285730905 67.73648544992265 62.46402874117891Q66.83921994122949 62.00946619662691 66.00232430881559 61.045589674220366Q65.18050787698573 60.099080296361684 64.85635813837212 59.14690413253656Q64.53220839975852 58.19472796871143 64.72319628131861 57.33594001228843Q64.9141841628787 56.47715205586543 65.66097137843693 55.82874643075196Q66.56406289492595 55.04462800038218 67.54522695096566 55.06082700145327Q68.52639100700537 55.077026002524356 69.4320794492102 55.87456311492514L68.43346863770793 56.7416171485071Q67.93949449919968 56.3481002486349 67.40732761867838 56.322802545651626Q66.87516073815708 56.297504842668346 66.41493140763865 56.69710365814525Q65.71156205345008 57.307811281798635 65.86594046611216 58.239864153530675Q66.02031887877425 59.17191702526271 66.94015011440034 60.23131284268251Q67.89767935148652 61.33412652147199 68.80170490966162 61.57721583667568Q69.70573046783672 61.82030515187937 70.33963124383381 61.269914330562116Q70.76512628525651 60.90047391625328 70.82435218955388 60.40738311096468Q70.88357809385123 59.91429230567608 70.68814700922131 59.39101656224784Q70.4927159245914 58.86774081881961 70.14293059879425 58.394720231680964L68.86644547452612 59.50304147460748L68.20296064882861 58.73888711450139L70.40858800640756 56.82382864032904L73.24347771620599 60.0888518153278L72.39248763336057 60.827732643945474L71.62298019999344 60.0642540522399L71.57087876634984 60.10949165399201Q71.74402893430397 60.65972798443326 71.65760834120289 61.19166076316387Q71.57118774810182 61.723593541894466 71.00675555029619 62.21366756087558Z M76.68318895907524 57.44648308540569 72.10465424519109 50.82534119946503 74.27071351930596 49.32750627163722Q75.0463329973733 48.79116363372508 75.735518801497 48.70607844174441Q76.42470460562068 48.62099324976375 76.98604840403057 48.89695477785554Q77.54739220244046 49.172916305947325 77.9398380350591 49.74044275331367Q78.38460997869356 50.38363939366219 78.40167237499922 51.10588138886346Q78.41873477130488 51.828123384064725 77.90414014163551 52.51952819827665L81.20448298976044 54.31999795221052L80.04105377265942 55.124511909078734L76.9617864462852 53.38089383658575L75.87402742216638 54.133081682438146L77.68581901608911 56.75316211444609ZM75.24611408997656 53.225039366652 76.35279066234092 52.45976999304565Q77.03382239918054 51.98883499390328 77.14138688823013 51.46703863209582Q77.24895137727974 50.94524227028836 76.9088316556769 50.4533860159042Q76.5621711701971 49.95207098739726 76.04399756202083 49.86996481047019Q75.52582395384457 49.78785863354311 74.82587466875941 50.271875160439436L73.72865687051781 51.03060377016881Z M84.4946092612468 52.288715119917136 82.78560926260695 44.06322843190596 84.06068392315962 43.37490756921436 89.99969350998208 49.31691710956607 88.8359348912237 49.9451464683719 87.44255065330177 48.50180152848031 85.21622981741616 49.70363160619581 85.65836788000517 51.6604857611113ZM84.21221727083632 45.25340261699646 84.9947577422136 48.71235345658014 86.7353358502696 47.7727408503662 84.27293511181503 45.220625433058764Z M93.54579038076524 47.663554647489846 90.52253932994785 40.202827264470706 91.63099025542498 39.753658536920696 96.96944870155916 43.95585937920544 94.75383757431727 38.48821202564999 95.83031395386718 38.05200008831777 98.85356500468455 45.51272747133691 97.74511407920744 45.96189619888692 92.40665563307326 41.75969535660217 94.62226676031514 47.22734271015762Z M102.87127845917774 44.14057012878243 100.68532561668103 36.39304728787511 102.54473109849879 35.868418605675906Q104.41520447008926 35.3406671337017 105.61475227541476 36.11944606590185Q106.81430008074025 36.898224998101995 107.32331481406447 38.70229103105613Q107.83232954738871 40.50635706401026 107.21674342998735 41.79727351930964Q106.60115731258598 43.088189974609016 104.73068394099549 43.61594144658322ZM103.73844137713702 42.724901214905906 104.38037898395505 42.54377940795618Q105.73066153622747 42.16279905540675 106.11441648436744 41.23601795812536Q106.49817143250739 40.309236860843974 106.13905060838293 39.03642953698063Q105.77992978425847 37.76362221311728 104.96835263694416 37.17410241153539Q104.15677548962985 36.584582609953486 102.80649293735743 36.965562962502915L102.1645553305394 37.14668476945264Z M112.72165177183047 41.63790641623463 111.39942050735709 33.69723865569653 116.47010406301499 32.85289954823997 116.64954973462208 33.93056160145585 112.78131015413139 34.57467711743502 113.16664612263506 36.888814579077554 116.69457137053126 36.3013661172901 116.87212814033198 37.3676843594195 113.34420289243576 37.95513282120695 113.74465007539055 40.36002077154135 117.61288965588126 39.71590525556218 117.79233532748836 40.793567308778066Z M125.14045969595728 40.269456748087244Q124.29074650902407 40.31623815413528 123.63639272742827 40.041293721547035Q122.98203894583247 39.766349288958786 122.58872765271359 39.21213246387572Q122.1954163595947 38.65791563879266 122.14031324872649 37.86624768619343L123.42636563976052 37.79544339595857Q123.47135385202375 38.40338957841008 123.90269332314443 38.81154504591399Q124.3340327942651 39.219700513417905 125.06891987485596 39.179240918997984Q125.74639390227568 39.14194223039212 126.10793507122804 38.80530845957796Q126.4694762401804 38.46867468876379 126.4416602690167 37.963439820857566Q126.41826956599269 37.538583227390966 126.17887022013628 37.26958679952709Q125.93947087427986 37.00059037166322 125.45635630560152 36.80259889197095Q124.97324173692317 36.60460741227868 124.21359624127903 36.40456436454254Q123.1969080435421 36.138051027948606 122.6948280399794 35.59558122922937Q122.19274803641672 35.05311143051013 122.14723099269432 34.2263634648454Q122.09475995618098 33.27330678220411 122.75147535493154 32.64976277008958Q123.4081907536821 32.02621875797505 124.61386487027652 31.959839735879868Q125.78509115496821 31.89535725727312 126.53020252533821 32.458999083476016Q127.27531389570821 33.02264090967892 127.35707196511812 34.08925933633691L126.05953696344987 34.160695807734584Q126.04373243437959 33.873630541878775 125.86811962817427 33.61263972825367Q125.69250682196895 33.35164891462857 125.38416013745532 33.19010516003106Q125.07581345294172 33.02856140543355 124.63947424884088 33.05258428962038Q124.09915936786915 33.07081419363828 123.74657208489978 33.3608853407527Q123.39398480193042 33.65095648786712 123.41927204844286 34.11026091323642Q123.45024892542061 34.6729088343138 123.91545572213298 34.96402556140555Q124.38066251884536 35.255142288497304 125.40946550837934 35.53250605456265Q126.05238835419271 35.70442308202421 126.55651992579928 35.970361953777655Q127.06065149740584 36.2363008255311 127.36694661387558 36.67437550709441Q127.67324173034532 37.11245018865771 127.71180478127681 37.81288943734589Q127.74720692639424 38.4559156328629 127.45445807154366 38.99607548927919Q127.16170921669305 39.53623534569548 126.57594104979177 39.87945534386735Q125.99017288289046 40.22267534203921 125.14045969595728 40.269456748087244Z M142.28707135011703 40.806789621422794 143.6093026145904 32.86612186088469 148.6799861702483 33.71046096834126 148.5005404986412 34.78812302155715 144.6323009181505 34.144007505577974 144.24696494964684 36.458144967220505 147.77489019754304 37.04559342900796 147.59733342774234 38.111911671137364 144.0694081798461 37.52446320934991 143.66896099689131 39.9293511596843 147.53720057738204 40.573466675663475 147.35775490577493 41.65112872887936ZM145.55280971250295 32.746725837652775 145.7228108750781 31.725782839869307 148.4092075960535 30.855712780889867 148.22220631722084 31.978750078451682Z M154.42388662829566 43.52079247028128Q153.4499123282959 43.245986970081695 152.9097626471481 42.55588035914687Q152.36961296600032 41.86577374821205 152.2644139150489 40.862250064047636Q152.15921486409746 39.85872637988322 152.49647615979694 38.663394284428946Q152.83686024527142 37.45699429920195 153.4510740295471 36.65645195041223Q154.06528781382278 35.855909601622514 154.893583914494 35.54593358301325Q155.72188001516523 35.23595756440398 156.68478642539228 35.507640274828574Q157.93545796971017 35.860515519403044 158.48495501332053 36.750417655350304Q159.03445205693086 37.64031979129756 158.82830591805632 38.8367989049586L157.53336281464752 38.47143250128415Q157.60550524431775 37.83459345580933 157.32657698417336 37.31975644209255Q157.04764872402896 36.80491942837576 156.36143955812003 36.61130646232605Q155.48707626607475 36.36460607010142 154.7814938318252 37.00195560409236Q154.07591139757565 37.6393051380833 153.69180825525123 39.000655580128445Q153.3108279027018 40.350938132400856 153.5807811633395 41.25755922170502Q153.85073442397723 42.16418031100918 154.72509771602247 42.410880703233815Q155.43344266147687 42.61073924883351 155.91436437121183 42.34613979379707Q156.39528608094682 42.08154033876063 156.67771841629883 41.504034299010726L157.9726615197076 41.869400702685176Q157.4739279365195 42.9594287128759 156.56870910968019 43.41498681897833Q155.66349028284085 43.87054492508076 154.42388662829566 43.52079247028128Z M163.74849514640394 46.71603924312229Q162.8425496784659 46.348930186951605 162.37177531916416 45.61219651551801Q161.90100095986242 44.8754628440844 161.89911429054325 43.86962541165366Q161.89722762122406 42.863787979222906 162.38094778935485 41.670071597939845Q162.86466795748564 40.476355216656785 163.5662212985654 39.75556716901739Q164.26777463964518 39.034779121377994 165.1186148453354 38.83359277894633Q165.96945505102562 38.63240643651467 166.87540051896366 38.99951549268535Q167.7920041688774 39.37094347892863 168.2574494371913 40.105517685325935Q168.72289470550518 40.84009189172323 168.72478137482437 41.845929324153985Q168.72666804414354 42.85176675658473 168.24294787601275 44.04548313786779Q167.75922770788196 45.23919951915085 167.0576743668022 45.95998756679025Q166.35612102572242 46.68077561442964 165.51060991102008 46.8841214218976Q164.66509879631772 47.087467229365565 163.74849514640394 46.71603924312229ZM164.18038815366359 45.65022104554812Q164.9797518018442 45.97414080099284 165.76155595262856 45.45338430096972Q166.5433601034129 44.932627800946584 167.09186422263264 43.579038690027396Q167.64036834185237 42.22544957910821 167.44161975086848 41.30735151240622Q167.24287115988463 40.389253445704234 166.443507511704 40.065333690259514Q165.63348568154765 39.737095004742194 164.85701062175116 40.26001096980163Q164.08053556195466 40.78292693486105 163.53203144273493 42.13651604578024Q162.98352732351523 43.49010515669943 163.17694682351123 44.406043758365115Q163.3703663235072 45.32198236003081 164.18038815366359 45.65022104554812Z M170.5366474186631 49.60644890101574 174.36065221139427 42.5227007868343 175.4333340686846 43.10176436973359 172.12830135496696 49.224146668418975 175.6195772112421 51.10883474483647 175.1006051322286 52.07020056033253Z M179.10765655629106 54.5358431601508 183.68619127017521 47.91470127421014 187.91426330305447 50.83842272721902 187.2928907347416 51.73700626888239 184.06744875887622 49.50660578683311 182.73313292797286 51.436195707878674 185.67481168015507 53.470373273618634 185.0599798757192 54.359498041159235 182.11830112353698 52.32532047541928 180.73165918161777 54.330580589447024 183.95710115748315 56.5609810714963 183.33572858917032 57.45956461315967Z M188.97587730515593 62.198588360291566Q188.3332929568849 61.6406579386823 188.05492390356608 60.98775367107916Q187.7765548502473 60.33484940347603 187.88000233821924 59.663173380580844Q187.98344982619122 58.99149735768567 188.49499867406647 58.38479127049228L189.46755876874695 59.2292265031982Q189.07664352554397 59.696995434008656 189.10217533031795 60.290285204647745Q189.12770713509192 60.883574975286834 189.68345576062362 61.36610939397593Q190.19578652478566 61.81094581120494 190.68968341785592 61.82095438330835Q191.18358031092617 61.83096295541176 191.51532272377494 61.44888577535872Q191.79428793457956 61.127593601223204 191.8096784823923 60.76782387481751Q191.82506903020501 60.40805414841182 191.6160647726681 59.92960087709743Q191.4070605151312 59.451147605783035 191.0009599234579 58.77871856904934Q190.45659794380225 57.87963331997373 190.47378169502585 57.14067288044135Q190.49096544624945 56.40171244090897 191.03381666727466 55.776495237185806Q191.6596034915121 55.05575873844938 192.56513744284092 55.065272569999834Q193.47067139416978 55.074786401550284 194.38244648293272 55.86644443221208Q195.2681708548739 56.635483661997824 195.4107233205268 57.55882642448436Q195.55327578617977 58.48216918697089 194.86946010357002 59.304820609030685L193.8882164366156 58.45284577603275Q194.07670644391604 58.23575646918443 194.13231703894337 57.92613811665877Q194.18792763397073 57.61651976413311 194.07901855937473 57.285894786294705Q193.97010948477876 56.9552698084563 193.64013373836931 56.668764997359645Q193.23954544178648 56.30572021136091 192.78449052215822 56.26851695045379Q192.32943560252997 56.23131368954666 192.02785159084928 56.578656580503974Q191.65841117654045 57.00415162192668 191.78973148719336 57.5369942708485Q191.92105179784627 58.069836919770324 192.46655774948385 58.98514534141189Q192.80844141929387 59.55612765840362 192.98523343348958 60.097991763799634Q193.1620254476853 60.63985586919565 193.07695875686198 61.167577181170415Q192.99189206603864 61.69529849314518 192.5319764482256 62.22499640185509Q192.10975883187263 62.711276449195324 191.52356699491574 62.89527017948279Q190.93737515795885 63.079263909770255 190.2779184056929 62.91789134583554Q189.61846165342698 62.75651878190084 188.97587730515593 62.198588360291566Z M201.01399008990037 74.65949929968531 201.8837616933394 74.01758158077494 202.92175630264128 75.42402076931467 207.65923567456454 71.92761787482418 206.6348988890693 70.53968446508102 207.50467049250832 69.89776674617066 210.27720872524884 73.65443984187544 209.4074371218098 74.29635756078581 208.38310033631453 72.90842415104267 203.64562096439127 76.40482704553315 204.68361557369312 77.81126623407287 203.81384397025408 78.45318395298324Z M207.537299191665 84.30165512502423 213.55501166447215 80.80967247263013 212.46989969976127 78.93970562157601 213.41482975747476 78.39137776706785 216.19687213508462 83.18565448094066 215.2519420773711 83.73398233544881 214.1668301126602 81.86401548439468 208.14911763985305 85.35599813678878Z M211.06808917392226 90.78585329643155 219.40300679407696 89.7330187817831 219.98828475001156 91.05855667799618 213.5950035233543 96.50881056262133 213.06082126198538 95.29899422877607 214.60988715591293 94.0241769452917 213.5879732645985 91.70974569793553 211.60227143529116 91.99566963027682ZM218.1036892776017 91.06098677514008 214.59366685285678 91.56739873963926 215.39261771333895 93.37686316939045 218.1315596564557 91.12410762734069Z M215.06647557050715 100.5036006220707 222.743016095694 98.0801267589635 223.10999928067884 99.24257432420609 216.47527496962445 101.33714816303446 217.66970137358445 105.12058599330513 216.62788515945192 105.44948601758395Z M217.82172891049998 110.1782508990591 218.88207430514203 109.967944826723 219.2221436987068 111.68254589039948 224.99764201845912 110.53704898576032 224.6620472221781 108.84500846239538 225.72239261682014 108.63470239005929 226.63073586542072 113.2144920733004 225.5703904707787 113.4247981456365 225.2347956744977 111.73275762227155 219.45929735474536 112.87825452691071 219.7993667483101 114.59285559058718 218.73902135366808 114.80316166292327Z M219.4009159212106 119.17130587519316 227.62726460422311 120.87615179066424 227.75143101912997 122.31982200972716 219.93699949033225 125.40429475749656 219.82367300053633 124.08665924009786 221.7022505822978 123.3825921131113 221.4854520800795 120.86189807982683 219.51424241100656 120.48894139259185ZM225.96773644577053 121.71143096034521 222.48300733863596 121.0531198257826 222.65250434946117 123.023844251805 225.97364913219465 121.78017716125298Z M44.21841537651431 178.69272290326106Q43.7989228574519 177.95229935795024 43.7544580049577 177.24392361768759Q43.709993152463504 176.5355478774249 44.031711570234805 175.93692669323013Q44.353429988006106 175.3383055090354 45.03815609756537 174.93715135551355L45.67306369398415 176.0577923970651Q45.14842916178939 176.36824546538426 44.97445756013478 176.93602932110554Q44.80048595848017 177.50381317682684 45.1632902992909 178.14417948628486Q45.49775055097579 178.73451717781649 45.959978937801566 178.90881356593866Q46.422207324627344 179.08310995406086 46.862459162379736 178.83368196975346Q47.23267093503516 178.62393571022227 47.36726921528379 178.28993806359267Q47.50186749553242 177.95594041696307 47.464557574613536 177.43516380237577Q47.42724765369466 176.91438718778844 47.268894690349676 176.14496998041662Q47.055867799947976 175.1157451293924 47.318729586587544 174.42490398005006Q47.58159137322711 173.73406283070773 48.30200347136739 173.32590794729563Q49.13247852894577 172.85539606780674 49.98289950130519 173.1666297738401Q50.833320473664614 173.47786347987343 51.42854634530722 174.528464456328Q52.00676576347432 175.54904826202673 51.83293198040742 176.4670160601355Q51.65909819734053 177.38498385824425 50.73990353955968 177.93219536315542L50.09932712531573 176.80154859801857Q50.34947021494777 176.6598281523894 50.505241269649545 176.38653080330403Q50.66101232435132 176.11323345421863 50.668711776468825 175.7652179647112Q50.67641122858633 175.4172024752038 50.460996151229956 175.0369849789631Q50.20456743703236 174.56104715262967 49.78803076237288 174.3740812167921Q49.371494087713394 174.18711528095452 48.97126514430212 174.41386799396125Q48.48098468862332 174.69164006739445 48.42691118520962 175.23775577741253Q48.372837681795914 175.78387148743064 48.581527666437495 176.8287708798653Q48.71320962228665 177.4811243979088 48.69898842843159 178.05092250482505Q48.68476723457653 178.6207206117413 48.428427189674515 179.08977914367483Q48.1720871447725 179.55883767560834 47.56173800607032 179.90463556294355Q47.001417485294546 180.22208936115294 46.387430163059534 180.1998603118102Q45.77344284082453 180.17763126246743 45.20567536820062 179.80538885551965Q44.63790789557672 179.4331464485719 44.21841537651431 178.69272290326106Z M49.25106505996029 186.41126657237217 54.929853834947366 182.39154465424392 53.68075016452073 180.62689624152065 54.57246079860961 179.99570023784761 57.77494999619279 184.51995840238277 56.88323936210391 185.1511544060558 55.63413569167727 183.38650599333255 49.9553469166902 187.4062279114608Z M53.66480847918642 192.32955093276956 61.31394654807263 188.8553605158356 62.26555621129771 189.94808191164364 57.77334543787249 197.04733219721058 56.904812808738484 196.05000711373498 58.00680916051761 194.37359180401444 56.34526847869604 192.4656655573655 54.53334110832043 193.32687601624514ZM60.466235202217874 190.50857268434547 57.263680784736394 192.03184406629612 58.562703499615075 193.5234954954944 60.51154994808573 190.56060703652682Z M60.698169553256875 200.0442820862693 66.20774597252094 194.17511965196155 68.1278005403159 195.97753822340653Q68.81533099690624 196.62294574680604 69.04351964047206 197.27880129907925Q69.27170828403787 197.93465685135243 69.1200338906009 198.54149826669544Q68.9683594971639 199.14833968203848 68.49611008979842 199.65141074783628Q67.9608940947842 200.22155795574048 67.25841000050565 200.3902017290784Q66.5559259062271 200.55884550241632 65.77172538208684 200.20124546335296L64.70596904411273 203.80653569828107L63.674673359227235 202.8384244131818L64.73136607628282 199.46122264963233L63.767146533503684 198.5560779521818L61.58692843616633 200.878589372615ZM64.52274558528848 197.75116424690532 65.5037341635942 198.67205059126803Q66.10741944255156 199.2387498801066 66.64016713821694 199.23411789746018Q67.17291483388232 199.22948591481375 67.58219765359907 198.79349099112233Q67.99935129677192 198.34911154966758 67.97059314945001 197.8252620660727Q67.9418350021281 197.30141258247784 67.32138068764414 196.71897164672708L66.34877662710171 195.80595612582044Z M69.64674336909658 207.84668203779987 73.87557990773138 202.32185192461927 72.15877319487525 201.00776718203522 72.82280537862782 200.14023187500686 77.22440556797171 203.50932148099358 76.56037338421913 204.37685678802194 74.84356667136302 203.06277204543792 70.61473013272823 208.58760215861852Z M78.18903122185004 213.9349693945829Q77.4941391622472 213.50625354987815 77.12605817898636 212.88730144974298Q76.75797719572552 212.2683493496078 76.80406236266415 211.49278618655256Q76.85014752960278 210.71722302349735 77.39962840098494 209.82658672175285L80.08061199322319 205.48106454620833L81.11805647657391 206.12111918759854L78.40084337633245 210.52536463578556Q77.91778326962284 211.30834160435214 78.02703339666863 211.96353888169727Q78.13628352371441 212.6187361590424 78.78223952278185 213.01726074707784Q79.42819552184928 213.41578533511324 80.06277351494174 213.21949515914224Q80.69735150803422 213.0232049831712 81.1804116147438 212.2402280146046L83.89762471498528 207.83598256641758L84.935069198336 208.4760372078078L82.25408560609775 212.82155938335234Q81.70460473471559 213.71219568509682 81.02235078081661 214.0952725114505Q80.34009682691763 214.4783493378042 79.61201005418525 214.42101728854593Q78.88392328145288 214.36368523928766 78.18903122185004 213.9349693945829Z M84.58470156841346 217.44504554644556 88.10272268236264 210.20446356418697 90.55417686778448 211.39556499848118Q91.38167195147116 211.79762455436108 91.78133578353379 212.34341470070032Q92.18099961559643 212.88920484703957 92.19835609572058 213.51134550846405Q92.21571257584473 214.13348616988856 91.90411642003781 214.77479485974573Q91.59252026423088 215.41610354960292 91.09269231705085 215.78695698860247Q90.59286436987081 216.15781042760202 89.91678459314073 216.18092315129738Q89.24070481641067 216.20403587499274 88.41320973272397 215.80197631911284L87.05818653318701 215.14360379635949L85.68113255429833 217.9777744579864ZM87.5356322557944 214.16095338448153 88.83893701260095 214.79419718499238Q89.54230783373464 215.1359478074903 90.02895784528823 214.96326072414334Q90.51560785684184 214.79057364079637 90.78699805706077 214.23201445930786Q91.05336251283121 213.68379896636543 90.89087301820578 213.18931813849Q90.72838352358036 212.69483731061456 90.02501270244667 212.35308668811663L88.72170794564012 211.71984288760578Z M102.73603616737307 224.6949096223404 104.73753458657332 216.8976983209879 105.89597740848855 217.19506380041196 107.69285486884077 223.74707584958264 109.15966728176895 218.03283385302004 110.28469348382123 218.3216214820761 108.28319506462098 226.11883278342856 107.12475224270575 225.82146730400453 105.32787478235353 219.26945525483382 103.86106236942535 224.98369725139642Z M112.87543150311697 227.0286398958862 113.03778793137496 225.95990167246416 114.76596037775954 226.22243547134943 115.65028475295206 220.4012230203698 113.94485141770413 220.14214361357512 114.10720784596212 219.07340539015308 118.72324740669988 219.774646984544 118.56089097844188 220.84338520796607 116.85545764319394 220.58430580117138 115.97113326800142 226.405518252151 117.699305714386 226.66805205103628 117.536949286128 227.73679027445834Z M124.94178178669796 228.508274701959Q124.04591421048524 228.46321600811694 123.39397734996501 227.91802921224325Q122.74204048944478 227.37284241636956 122.40981131234462 226.4234551013693Q122.07758213524446 225.4740677863691 122.1417041226351 224.19917931252792Q122.20467075890157 222.94726180217938 122.63048337705834 222.03600107427627Q123.0562959952151 221.1247403463732 123.78893736068812 220.63767797398356Q124.52157872616115 220.15061560159393 125.5093301563444 220.2002956999326Q126.70382025796135 220.2603739583887 127.40022084181405 220.9517288161207Q128.09662142566674 221.6430836738527 128.19733991165907 222.84566123333875L126.87650951083263 222.7792285436998Q126.79284917372166 222.1532357737779 126.42657115320654 221.76634822656615Q126.06029313269141 221.37946067935442 125.45156260013663 221.3488438745643Q124.52123857868496 221.30205215403598 123.98692557424789 222.08119582710881Q123.45261256981081 222.86033950018165 123.38213615123732 224.2615682732323Q123.30877135485343 225.72022445501457 123.7923676738706 226.5217787109655Q124.27596399288777 227.3233329669164 125.1144041603689 227.3655032829481Q125.67719276593843 227.3938093854899 126.06148077312082 227.0792160328332Q126.44576878030323 226.7646226801765 126.66730620806516 226.25185374527442Q126.88884363582707 225.73908481037233 126.96424701647831 225.15563594355848L125.27588119976973 225.07071763593305L125.32671664923258 224.05999524225714L128.24402901279706 224.20672483502491L128.02682300145582 228.52526597164007L126.90124579031676 228.46865376655643L126.87514892092786 227.3849747534681L126.80623603044995 227.38150870009562Q126.54995331966803 227.89828734918464 126.1191457099383 228.22205548133934Q125.68833810020855 228.54582361349406 124.94178178669796 228.508274701959Z M131.9731769985442 228.52526597164004 131.56880410508975 220.48542874921824 132.78626517019933 220.424195139638 132.9537910832019 223.75498484606987 136.46834849757485 223.5782161240741 136.3008225845723 220.24742641764217 137.51828364968188 220.18619280806195 137.92265654313636 228.22603003048374 136.70519547802675 228.287263640064 136.5243830270964 224.69230785346682 133.00982561272343 224.86907657546263 133.19063806365378 228.4640323620598Z M144.19122316025658 227.47425647557304 143.14626955285135 220.5956753567397 141.0087931060073 220.9203882132557 140.84470948170397 219.84028043426534 146.32483526563402 219.00777194043175 146.48891888993734 220.08787971942212 144.35144244309325 220.4125925759381 145.39639605049845 227.2911736947715Z M162.88178034452733 219.5855903124172Q162.48233710446075 219.73220323123786 162.10456573276247 219.57073232604074Q161.72679436106415 219.4092614208436 161.58810646488243 219.0314097072671Q161.44941856870074 218.6535579936906 161.6350081414044 218.29143438150317Q161.82059771410803 217.92931076931575 162.2200409541746 217.78269785049508Q162.63027995748624 217.63212242035493 163.00067219190228 217.79017669958927Q163.37106442631833 217.94823097882363 163.50975232250002 218.32608269240012Q163.64844021868174 218.7039344059766 163.47022978326035 219.06947464412684Q163.29201934783896 219.43501488227704 162.88178034452733 219.5855903124172Z M179.20362182640923 215.38142994477025 174.97684589270028 208.53038146981265 176.0730136486935 207.8540973204192 179.40024682572331 210.07130990284608 178.91130515974737 206.10300443359694 180.00747291574058 205.4267202842035 184.23424884944953 212.27776875916112 183.2457404266342 212.88763214388197 180.23869126236698 208.01360051455498 180.6325119156271 211.14876419338674 179.8103860986322 211.6559773054318 177.1911193362912 209.90732214282949 180.19213024922453 214.7715665600494Z M187.99721337602642 209.6500536526226 187.3401710047344 208.79165029619455 188.72822749597978 207.7291988021904 185.14944351617646 203.05364009483756 183.77965092613167 204.10211196392058 183.12260855483964 203.24370860749252 186.83018049856085 200.40584474850786 187.48722286985287 201.26424810493592 186.1174302798081 202.3127199740189 189.69621425961142 206.98827868137175 191.0842707508568 205.92582718736764 191.74131312214882 206.7842305437957Z M195.57910455983935 203.53892770077394 190.06952814057527 197.6697652664662 190.95828702348473 196.83545798012048 195.7201352144201 201.90809122691505 198.6127938427575 199.19265713456346 199.3605220710862 199.98918632207665Z M202.22665456212752 197.0473321972105 197.7344437887023 189.94808191164356 198.68605345192736 188.8553605158355 206.3351915208136 192.32955093276948 205.46665889167957 193.32687601624508 203.65473152130397 192.4656655573654 201.9931908394824 194.37359180401435 203.09518719126152 196.05000711373492ZM199.48845005191427 190.56060703652673 201.43729650038492 193.5234954954943 202.73631921526362 192.03184406629606 199.53376479778214 190.50857268434538Z M208.74239606520544 189.24596774600207 202.1718966561295 184.59504982420077 202.86289017593998 183.61886134056664 209.62486895871675 184.27709643631636 204.8096315346368 180.86863801648198 205.48069254906812 179.92060881602958 212.05119195814407 184.5715267378309 211.3601984383336 185.54771522146504 204.59821965555682 184.88948012571532 209.41345707963677 188.2979385455497Z M215.82126634826187 178.6226828381641Q215.33941683312264 179.47316934291302 214.54769829020984 179.8440962208931Q213.75597974729706 180.21502309887322 212.75844514865872 180.08603773334892Q211.76091055002036 179.95705236782464 210.6402695084688 179.32214477140585Q209.51962846691728 178.68723717498708 208.89623584473998 177.8978740528342Q208.2728432225627 177.10851093068135 208.1840580899707 176.23872808408652Q208.0952729573787 175.36894523749166 208.57712247251797 174.51845873274272Q209.06464080548238 173.6579665044085 209.85352493948258 173.29204248822106Q210.64240907348278 172.9261184720336 211.63994367212115 173.0551038375579Q212.6374782707595 173.18408920308218 213.75811931231104 173.81899679950095Q214.87876035386256 174.45390439591972 215.50215297603984 175.2432675180726Q216.12554559821714 176.03263064022548 216.21716513972171 176.89741062502767Q216.30878468122629 177.76219060982987 215.82126634826187 178.6226828381641ZM214.8206939897337 178.05580105564732Q215.2458553266213 177.3053717867512 214.8312346045725 176.46246329862942Q214.41661388252368 175.61955481050765 213.1458869871929 174.89961494671138Q211.87516009186214 174.17967508291508 210.93900812989793 174.25729316463924Q210.00285616793371 174.33491124636336 209.57769483104613 175.08534051525947Q209.1468646763334 175.84577550774088 209.5643198072948 176.68368113407Q209.98177493825617 177.52158676039915 211.25250183358693 178.24152662419544Q212.5232287289177 178.96146648799174 213.45654628196934 178.88885126806025Q214.38986383502098 178.81623604812873 214.8206939897337 178.05580105564732Z" fill="#E9D7AA"/><path d="M221.81,145.19 L222.80,149.20 L226.81,150.19 L222.80,151.18 L221.81,155.19 L220.82,151.18 L216.81,150.19 L220.82,149.20Z" fill="#CDA85E"/><path d="M38.19,145.19 L39.18,149.20 L43.19,150.19 L39.18,151.18 L38.19,155.19 L37.20,151.18 L33.19,150.19 L37.20,149.20Z" fill="#CDA85E"/><path d="M106.466 153.957Q102.374 153.957 99.371 152.6865Q96.368 151.416 94.289 149.172L90.59299999999999 153.66H89.43799999999999V139.536H90.758Q91.38499999999999 142.242 92.58949999999999 144.618Q93.794 146.994 95.6585 148.776Q97.523 150.558 100.0475 151.58100000000002Q102.572 152.604 105.905 152.604Q109.304 152.604 111.779 151.4325Q114.25399999999999 150.261 115.607 148.06650000000002Q116.96 145.872 116.96 142.77Q116.96 139.932 115.541 137.985Q114.122 136.038 111.74600000000001 134.619Q109.37 133.2 106.565 131.97899999999998Q103.75999999999999 130.758 100.95499999999998 129.405Q98.14999999999999 128.052 95.774 126.22049999999999Q93.398 124.389 91.979 121.749Q90.56 119.10900000000001 90.56 115.314Q90.56 111.519 92.4575 108.7305Q94.35499999999999 105.94200000000001 97.53949999999999 104.391Q100.72399999999999 102.84 104.51899999999999 102.84Q107.72 102.84 110.393 103.84649999999999Q113.066 104.853 115.079 106.899L118.74199999999999 102.84H119.83099999999999V116.76599999999999H118.577Q117.719 112.64099999999999 115.8545 109.85249999999999Q113.99 107.064 111.251 105.678Q108.512 104.292 105.113 104.292Q100.625 104.292 98.282 106.437Q95.939 108.582 95.939 112.146Q95.939 114.687 97.358 116.45249999999999Q98.777 118.21799999999999 101.08699999999999 119.571Q103.39699999999999 120.924 106.18549999999999 122.14500000000001Q108.97399999999999 123.366 111.746 124.76849999999999Q114.518 126.17099999999999 116.8445 128.118Q119.17099999999999 130.065 120.5735 132.82049999999998Q121.976 135.576 121.976 139.536Q121.976 143.892 120.0455 147.14249999999998Q118.115 150.393 114.61699999999999 152.175Q111.119 153.957 106.466 153.957Z" fill="#F2EEE6"/><path d="M160.85999999999999 153.66 141.423 105.018 130.962 151.713H138.321V153.0H123.07499999999999V151.713H129.60899999999998L140.16899999999998 104.787H133.635V103.5H149.673L164.292 140.757L172.509 104.787H164.886V103.5H180.495V104.787H173.862L162.74099999999999 153.66Z" fill="#E9D7AA"/><path d="M130.00,76.00 L131.84,84.16 L140.00,86.00 L131.84,87.84 L130.00,96.00 L128.16,87.84 L120.00,86.00 L128.16,84.16Z" fill="#CDA85E"/><path d="M104 171h52" stroke="#CDA85E" stroke-width="1.4"/><circle cx="130" cy="186" r="1.8" fill="#CDA85E"/></symbol>
+  </defs>
+</svg>
+
+<div class="ticker">
+  <div class="wrap">
+    <span><b class="l-it">Alumni Startup Night · Edizione 2027 · Milano</b><b class="l-fr">Alumni Startup Night · Édition 2027 · Milan</b></span>
+    <span class="l-it">Data in arrivo · Accesso su invito · Richiedi l'accredito</span>
+    <span class="l-fr">Date à venir · Accès sur invitation · Demandez votre accréditation</span>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Alumni Startup Night">
+      <svg viewBox="0 0 64 64"><use href="#mark"/></svg>
+      <span>Startup Night<small>Alumni Grandes Écoles Italia</small></span>
+    </a>
+    <ul>
+      <li><a href="#format">Format</a></li>
+      <li><a href="#speech"><span class="l-it">Speech</span><span class="l-fr">Conférences</span></a></li>
+      <li><a href="#programma"><span class="l-it">Programma</span><span class="l-fr">Programme</span></a></li>
+      <li><a href="#perchi"><span class="l-it">Per chi</span><span class="l-fr">Pour qui</span></a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="langs" role="group" aria-label="Lingua / Langue">
+      <button type="button" id="btn-it" aria-pressed="true">IT</button>
+      <button type="button" id="btn-fr" aria-pressed="false">FR</button>
+    </div>
+    <a class="btn btn-or" href="#accredito"><span class="l-it">Richiedi l'accredito</span><span class="l-fr">Accréditation</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="arcade" aria-hidden="true">
+    <svg viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice">
+      <path class="draw" d="M820 760V300a150 150 0 0 1 300 0v460"/>
+      <path class="draw" style="animation-delay:.2s" d="M1140 760V300a150 150 0 0 1 300 0v460"/>
+      <path class="draw" style="animation-delay:.4s" d="M860 760V310a110 110 0 0 1 220 0v450"/>
+      <path class="draw" style="animation-delay:.5s" d="M1180 760V310a110 110 0 0 1 220 0v450"/>
+      <path d="M820 560h620"/>
+      <path d="M0 700h1440" style="stroke:rgba(242,238,230,.06)"/>
+    </svg>
+  </div>
+  <div class="wrap hero-grid">
+    <svg class="hero-seal" viewBox="0 0 260 260" aria-hidden="true"><circle cx="130" cy="130" r="123" fill="#0A1226"/><use href="#sceau"/></svg>
+    <div class="presents label">
+      <span class="l-it">Alumni Grandes Écoles Italia presenta</span>
+      <span class="l-fr">Alumni Grandes Écoles Italia présente</span>
+    </div>
+    <h1>Startup <span class="row2">Night</span></h1>
+    <p class="tagline l-it">Oltre il pitch a comando: dove il business si fa a tavola.</p>
+    <p class="tagline l-fr">Au-delà du pitch sur commande : là où les affaires se font à table.</p>
+    <p class="lede l-it">Una sera all'anno startup, investitori, coach e alumni delle Grandes Écoles francesi si siedono allo stesso tavolo. Speech di contenuto, 10 startup selezionate sul palco e due ore di networking vero.</p>
+    <p class="lede l-fr">Un soir par an, startups, investisseurs, coachs et alumni des Grandes Écoles françaises s'assoient à la même table. Des conférences de fond, 10 startups sélectionnées sur scène et deux heures de vrai networking.</p>
+    <div class="hero-cta">
+      <a class="btn btn-or" href="#accredito"><span class="l-it">Richiedi l'accredito</span><span class="l-fr">Demander l'accréditation</span> →</a>
+      <a class="btn btn-ghost" href="#programma"><span class="l-it">Scopri il programma</span><span class="l-fr">Voir le programme</span></a>
+    </div>
+    <div class="facts">
+      <div><span class="label l-it">Quando</span><span class="label l-fr">Quand</span><strong class="l-it">Autunno 2027</strong><strong class="l-fr">Automne 2027</strong><span class="l-it">Data ufficiale in arrivo</span><span class="l-fr">Date officielle à venir</span></div>
+      <div><span class="label l-it">Dove</span><span class="label l-fr">Où</span><strong>Milano</strong><span class="l-it">Location annunciata con la data</span><span class="l-fr">Lieu annoncé avec la date</span></div>
+      <div><span class="label">Format</span><strong class="l-it">Speech + Pitch</strong><strong class="l-fr">Talks + Pitchs</strong><span class="l-it">+ Aperinetwork</span><span class="l-fr">+ Apéro-networking</span></div>
+      <div><span class="label l-it">Accesso</span><span class="label l-fr">Accès</span><strong class="l-it">Su invito</strong><strong class="l-fr">Sur invitation</strong><span class="l-it">Posti limitati</span><span class="l-fr">Places limitées</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- NUMBERS -->
+<div class="numbers">
+  <div class="wrap num-grid">
+    <div><strong>2.500+</strong><span class="l-it">professionisti nella community</span><span class="l-fr">professionnels dans la communauté</span></div>
+    <div><strong>10+</strong><span class="l-it">anni di serate, senza saltare un mese</span><span class="l-fr">ans de soirées, sans manquer un mois</span></div>
+    <div><strong>3</strong><span class="l-it">città: Milano, Roma, Bologna</span><span class="l-fr">villes : Milan, Rome, Bologne</span></div>
+    <div><strong>10</strong><span class="l-it">startup selezionate sul palco</span><span class="l-fr">startups sélectionnées sur scène</span></div>
+  </div>
+</div>
+
+
+<!-- PHOTO BAND -->
+<figure class="band">
+  <img src="img/sn26_4737.jpg" alt="La sala della Startup Night 2026 piena durante gli interventi" loading="lazy" width="2000" height="1333">
+  <figcaption class="wrap"><span class="label">29.09.2026 · Monte Rosa 91 · Milano</span><span class="l-it">La sala dell'edizione 2026, durante i pitch.</span><span class="l-fr">La salle de l'édition 2026, pendant les pitchs.</span></figcaption>
+</figure>
+
+<!-- SAVE THE DATE -->
+<section>
+  <div class="wrap std">
+    <div class="sec-head" style="margin:0">
+      <span class="label">Save the date</span>
+      <h2 class="l-it">Una sera all'anno. <em>Questa è la prossima.</em></h2>
+      <h2 class="l-fr">Un soir par an. <em>Voici le prochain.</em></h2>
+      <p class="lede l-it">La data della Startup Night 2027 sarà comunicata prima a chi ha richiesto l'accredito. Lascia il tuo profilo ora: i posti si chiudono in fretta.</p>
+      <p class="lede l-fr">La date de la Startup Night 2027 sera communiquée en priorité aux personnes ayant demandé leur accréditation. Laissez votre profil dès maintenant : les places partent vite.</p>
+    </div>
+    <div>
+      <div class="count" id="count" aria-live="polite">
+        <div><strong id="cd-d">––</strong><span class="l-it">Giorni</span><span class="l-fr">Jours</span></div>
+        <div><strong id="cd-h">––</strong><span class="l-it">Ore</span><span class="l-fr">Heures</span></div>
+        <div><strong id="cd-m">––</strong><span>Min</span></div>
+        <div><strong id="cd-s">––</strong><span class="l-it">Sec</span><span class="l-fr">Sec</span></div>
+      </div>
+      <p class="count-note" id="cd-note"><span class="l-it">Il conto alla rovescia parte con l'annuncio della data.</span><span class="l-fr">Le compte à rebours démarre à l'annonce de la date.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- FORMAT -->
+<section id="format" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label l-it">Il format</span><span class="label l-fr">Le format</span>
+      <h2 class="l-it">Una serata in <em>tre atti.</em></h2>
+      <h2 class="l-fr">Une soirée en <em>trois actes.</em></h2>
+      <p class="lede l-it">Il metodo della community da oltre dieci anni: un contenuto, un contesto informale, il tempo per parlarsi. La Startup Night lo porta sul palco.</p>
+      <p class="lede l-fr">La méthode de la communauté depuis plus de dix ans : un contenu, un cadre informel, le temps de se parler. La Startup Night la porte sur scène.</p>
+    </div>
+    <div class="acts">
+      <div class="act">
+        <img class="act-img" src="img/sn26_4743.jpg" alt="Uno speaker spiega un grafico al pubblico" loading="lazy">
+        <span class="roman">I</span>
+        <h3 class="l-it">Gli speech</h3><h3 class="l-fr">Les conférences</h3>
+        <p class="l-it">Interventi brevi e concreti di investitori, coach ed esperti: cosa cerca il capitale, come si presenta un progetto, come si regge la crescita.</p>
+        <p class="l-fr">Des interventions courtes et concrètes d'investisseurs, de coachs et d'experts : ce que cherche le capital, comment présenter un projet, comment tenir la croissance.</p>
+        <span class="meta">≈ 45'</span>
+      </div>
+      <div class="act">
+        <img class="act-img" src="img/sn26_4911.jpg" alt="Una startup presenta il suo pitch sul palco" loading="lazy">
+        <span class="roman">II</span>
+        <h3>Lightning Pitch</h3>
+        <p class="l-it">10 startup selezionate raccontano il loro progetto in pochi minuti, con una domanda dal panel. Poi il pubblico vota dal telefono con «Il polso della sala».</p>
+        <p class="l-fr">10 startups sélectionnées présentent leur projet en quelques minutes, avec une question du jury. Puis le public vote depuis son téléphone avec « Le pouls de la salle ».</p>
+        <span class="meta">≈ 50'</span>
+      </div>
+      <div class="act">
+        <img class="act-img" src="img/sn26_5099.jpg" alt="Partecipanti in conversazione durante l'aperinetwork" loading="lazy">
+        <span class="roman">III</span>
+        <h3>Aperinetwork</h3>
+        <p class="l-it">Due ore al tavolo, non in platea. Un badge colorato per ruolo e la lista completa dei partecipanti via QR code per sapere chi incontrare.</p>
+        <p class="l-fr">Deux heures à table, pas dans un amphithéâtre. Un badge de couleur par rôle et la liste complète des participants par QR code pour savoir qui rencontrer.</p>
+        <span class="meta">≈ 2h+</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPEECH -->
+<section id="speech" class="talks-band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label l-it">Il palco dei contenuti · Proposta 2027</span><span class="label l-fr">La scène des contenus · Proposition 2027</span>
+      <h2 class="l-it">Prima dei pitch, <em>le idee.</em></h2>
+      <h2 class="l-fr">Avant les pitchs, <em>les idées.</em></h2>
+      <p class="lede l-it">Ogni serata della community ha un ospite che porta contenuto. Alla Startup Night diventano un panel: sei interventi che danno ai founder strumenti da usare la mattina dopo. Relatori in fase di conferma.</p>
+      <p class="lede l-fr">Chaque soirée de la communauté accueille un invité qui apporte du contenu. À la Startup Night, cela devient un panel : six interventions qui donnent aux fondateurs des outils utilisables dès le lendemain. Intervenants en cours de confirmation.</p>
+    </div>
+    <div class="talks">
+      <article class="talk key">
+        <div class="kind"><span class="label">Keynote · 15–20'</span><span class="chip l-it">Confermato</span><span class="chip l-fr">Confirmé</span></div>
+        <h3 class="l-it">Come costruire una pitch presentation che convince e ottiene il finanziamento</h3>
+        <h3 class="l-fr">Construire une pitch presentation qui convainc et décroche le financement</h3>
+        <p class="l-it">Struttura, slide e voce: il metodo Lean Presentation Design applicato al pitch. Cosa mostrare, cosa dire, cosa togliere perché un investitore capisca il progetto in quattro minuti.</p>
+        <p class="l-fr">Structure, slides et voix : la méthode Lean Presentation Design appliquée au pitch. Que montrer, que dire, que retirer pour qu'un investisseur comprenne le projet en quatre minutes.</p>
+        <div class="who"><span class="avatar">ML</span><div><b>Maurizio La Cava</b><small>Founder, MLC Presentation Design</small></div></div>
+      </article>
+      <article class="talk">
+        <div class="kind"><span class="label">Venture · 8'</span><span class="chip tbc l-it">Da confermare</span><span class="chip tbc l-fr">À confirmer</span></div>
+        <h3 class="l-it">Cosa cerca davvero un investitore in un early stage</h3>
+        <h3 class="l-fr">Ce que cherche vraiment un investisseur en early stage</h3>
+        <p class="l-it">Team, traction, numeri: la checklist reale con cui un fondo legge un deck.</p>
+        <p class="l-fr">Équipe, traction, chiffres : la vraie checklist avec laquelle un fonds lit un deck.</p>
+        <div class="who"><span class="avatar tbc">VC</span><div><b class="l-it">Partner di un fondo VC</b><b class="l-fr">Partner d'un fonds VC</b><small class="l-it">Speaker in arrivo</small><small class="l-fr">Intervenant à venir</small></div></div>
+      </article>
+      <article class="talk">
+        <div class="kind"><span class="label">Coaching · 8'</span><span class="chip tbc l-it">Da confermare</span><span class="chip tbc l-fr">À confirmer</span></div>
+        <h3 class="l-it">Il founder sotto pressione: leadership e gestione dello stress</h3>
+        <h3 class="l-fr">Le fondateur sous pression : leadership et gestion du stress</h3>
+        <p class="l-it">Non solo l'idea, chi la porta avanti. Cosa cambia nel team quando si cresce in fretta.</p>
+        <p class="l-fr">Pas seulement l'idée, mais qui la porte. Ce qui change dans l'équipe quand on grandit vite.</p>
+        <div class="who"><span class="avatar tbc">CO</span><div><b class="l-it">Executive coach</b><b class="l-fr">Executive coach</b><small class="l-it">Speaker in arrivo</small><small class="l-fr">Intervenant à venir</small></div></div>
+      </article>
+      <article class="talk">
+        <div class="kind"><span class="label">Ecosystem · 8'</span><span class="chip tbc l-it">Da confermare</span><span class="chip tbc l-fr">À confirmer</span></div>
+        <h3 class="l-it">Francia–Italia: scalare tra due ecosistemi</h3>
+        <h3 class="l-fr">France–Italie : passer à l'échelle entre deux écosystèmes</h3>
+        <p class="l-it">Programmi, reti e capitali per le startup che guardano oltre confine.</p>
+        <p class="l-fr">Programmes, réseaux et capitaux pour les startups qui regardent au-delà de la frontière.</p>
+        <div class="who"><span class="avatar tbc">FR</span><div><b class="l-it">Voce dell'ecosistema franco-italiano</b><b class="l-fr">Voix de l'écosystème franco-italien</b><small class="l-it">Speaker in arrivo</small><small class="l-fr">Intervenant à venir</small></div></div>
+      </article>
+      <article class="talk">
+        <div class="kind"><span class="label">Corporate · 8'</span><span class="chip tbc l-it">Da confermare</span><span class="chip tbc l-fr">À confirmer</span></div>
+        <h3 class="l-it">Dalla demo al contratto: come un'azienda diventa il primo cliente</h3>
+        <h3 class="l-fr">De la démo au contrat : comment une entreprise devient le premier client</h3>
+        <p class="l-it">Open innovation vista da dentro: tempi, interlocutori, errori da evitare.</p>
+        <p class="l-fr">L'open innovation vue de l'intérieur : délais, interlocuteurs, erreurs à éviter.</p>
+        <div class="who"><span class="avatar tbc">CI</span><div><b class="l-it">Responsabile innovazione corporate</b><b class="l-fr">Responsable innovation corporate</b><small class="l-it">Speaker in arrivo</small><small class="l-fr">Intervenant à venir</small></div></div>
+      </article>
+      <article class="talk wide">
+        <div class="kind"><span class="label">Fireside · 10'</span><span class="chip tbc l-it">Da confermare</span><span class="chip tbc l-fr">À confirmer</span></div>
+        <h3 class="l-it">Da alumni a founder: la storia di chi ce l'ha fatta</h3>
+        <h3 class="l-fr">D'alumni à fondateur : le parcours de ceux qui ont réussi</h3>
+        <p class="l-it">Intervista a un alumno delle Grandes Écoles che ha fondato e fatto crescere una startup in Italia. Domande libere dalla sala.</p>
+        <p class="l-fr">Entretien avec un alumnus des Grandes Écoles qui a fondé et fait grandir une startup en Italie. Questions libres de la salle.</p>
+        <div class="who"><span class="avatar tbc">AG</span><div><b class="l-it">Alumni founder</b><b class="l-fr">Alumni fondateur</b><small class="l-it">Speaker in arrivo</small><small class="l-fr">Intervenant à venir</small></div></div>
+      </article>
+      <article class="talk cta-card">
+        <div class="kind"><span class="label l-it">Call for speakers</span><span class="label l-fr">Appel à intervenants</span></div>
+        <h3 class="l-it">Hai un tema da portare sul palco?</h3><h3 class="l-fr">Un sujet à porter sur scène ?</h3>
+        <p class="l-it">Investitori e coach possono candidarsi come voce esperta del panel.</p><p class="l-fr">Investisseurs et coachs peuvent se proposer comme voix experte du panel.</p>
+        <div><a class="btn btn-or" href="#accredito" data-role="speaker"><span class="l-it">Proponi uno speech</span><span class="l-fr">Proposer une intervention</span> →</a></div>
+      </article>
+    </div>
+</div>
+  </div>
+</section>
+
+<!-- PROGRAMMA -->
+<section id="programma">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label l-it">Programma · orari indicativi</span><span class="label l-fr">Programme · horaires indicatifs</span>
+      <h2 class="l-it">Dalle 18:30 inizia <em>la Startup Night.</em></h2>
+      <h2 class="l-fr">Dès 18h30, place à <em>la Startup Night.</em></h2>
+    </div>
+    <div class="agenda">
+      <div class="slot"><time>18:30</time><div><h3 class="l-it">Registrazioni e badge</h3><h3 class="l-fr">Accueil et badges</h3><p class="l-it">Accoglienza, badge colorato per ruolo, QR code con la lista completa dei partecipanti.</p><p class="l-fr">Accueil, badge de couleur par rôle, QR code avec la liste complète des participants.</p></div><span class="dur">45'</span></div>
+      <div class="slot"><time>19:15</time><div><h3 class="l-it">Apertura</h3><h3 class="l-fr">Ouverture</h3><p class="l-it">Alumni Grandes Écoles Italia introduce la serata, saluto del partner ospitante e presentazione del panel.</p><p class="l-fr">Alumni Grandes Écoles Italia ouvre la soirée, mot du partenaire hôte et présentation du jury.</p></div><span class="dur">5'</span></div>
+      <div class="slot hl"><time>19:20</time><div><h3>Keynote · Pitch presentation</h3><p class="l-it">Come costruire una presentazione che convince e ottiene il finanziamento.</p><p class="l-fr">Construire une présentation qui convainc et décroche le financement.</p></div><span class="dur">15–20'</span></div>
+      <div class="slot"><time>19:40</time><div><h3 class="l-it">Gli speech del panel</h3><h3 class="l-fr">Les conférences du panel</h3><p class="l-it">Investitori, coaching, ecosistema franco-italiano, corporate. Interventi da 8' con una domanda dalla sala.</p><p class="l-fr">Investisseurs, coaching, écosystème franco-italien, corporate. Interventions de 8' avec une question de la salle.</p></div><span class="dur">≈ 35'</span></div>
+      <div class="slot hl"><time>20:15</time><div><h3>Lightning Pitch</h3><p class="l-it">10 startup selezionate, ognuna con una domanda dal panel.</p><p class="l-fr">10 startups sélectionnées, chacune avec une question du jury.</p></div><span class="dur">≈ 50'</span></div>
+      <div class="slot"><time>21:05</time><div><h3 class="l-it">Il polso della sala</h3><h3 class="l-fr">Le pouls de la salle</h3><p class="l-it">Voto del pubblico via QR code e feedback sulle startup appena presentate. Fireside con un alumni founder.</p><p class="l-fr">Vote du public par QR code et retours sur les startups présentées. Fireside avec un alumni fondateur.</p></div><span class="dur">15'</span></div>
+      <div class="slot hl"><time>21:20</time><div><h3>Aperinetwork</h3><p class="l-it">Incontri al tavolo tra startup, investitori, coach, mentor, media e alumni.</p><p class="l-fr">Rencontres à table entre startups, investisseurs, coachs, mentors, médias et alumni.</p></div><span class="dur">2h+</span></div>
+    </div>
+    <p class="agenda-note l-it">Scaletta indicativa, costruita sul format 2026. Gli orari definitivi saranno pubblicati con la data.</p>
+    <p class="agenda-note l-fr">Déroulé indicatif, construit sur le format 2026. Les horaires définitifs seront publiés avec la date.</p>
+  </div>
+</section>
+
+<!-- PER CHI -->
+<section id="perchi" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label l-it">Per chi è · un colore per riconoscersi</span><span class="label l-fr">Pour qui · une couleur pour se reconnaître</span>
+      <h2 class="l-it">Quattro ruoli, <em>un solo tavolo.</em></h2>
+      <h2 class="l-fr">Quatre rôles, <em>une seule table.</em></h2>
+    </div>
+    <div class="aud">
+      <div class="card-a" style="--c:var(--b-startup)"><div class="badge"></div>
+        <div class="top"><span class="dot l-it">Badge giallo</span><span class="dot l-fr">Badge jaune</span><h3>Startup Founders</h3></div>
+        <ul class="l-it"><li>Pitch davanti a un panel di esperti</li><li>Consigli diretti su come presentarsi</li><li>Visibilità sui canali della community: WhatsApp (2.500+) e LinkedIn</li><li>Due ore al tavolo con investitori e coach</li></ul>
+        <ul class="l-fr"><li>Pitch devant un jury d'experts</li><li>Des conseils directs pour bien se présenter</li><li>Visibilité sur les canaux de la communauté : WhatsApp (2 500+) et LinkedIn</li><li>Deux heures à table avec investisseurs et coachs</li></ul>
+      </div>
+      <div class="card-a" style="--c:var(--b-inv)"><div class="badge"></div>
+        <div class="top"><span class="dot l-it">Badge verde</span><span class="dot l-fr">Badge vert</span><h3 class="l-it">Investitori</h3><h3 class="l-fr">Investisseurs</h3></div>
+        <ul class="l-it"><li>Deal-flow curato dal team organizzativo</li><li>Confronto diretto con i founder, senza intermediari</li><li>Business Angels, VC, Family Office e Club Deal in sala</li><li>Possibilità di intervenire nel panel</li></ul>
+        <ul class="l-fr"><li>Un deal-flow sélectionné par l'équipe organisatrice</li><li>Échange direct avec les fondateurs, sans intermédiaire</li><li>Business Angels, VC, Family Offices et Club Deals dans la salle</li><li>Possibilité d'intervenir dans le panel</li></ul>
+      </div>
+      <div class="card-a" style="--c:var(--b-coach)"><div class="badge"></div>
+        <div class="top"><span class="dot l-it">Badge rosso</span><span class="dot l-fr">Badge rouge</span><h3>Coach · Mentor · Media</h3></div>
+        <ul class="l-it"><li>Founder in fase di crescita reale</li><li>Un momento dedicato a cos'è il coaching</li><li>Speech su leadership, stress, organizzazione dei team</li><li>Lista partecipanti via QR code</li></ul>
+        <ul class="l-fr"><li>Des fondateurs en vraie phase de croissance</li><li>Un moment dédié à ce qu'est le coaching</li><li>Interventions sur leadership, stress, organisation des équipes</li><li>Liste des participants par QR code</li></ul>
+      </div>
+      <div class="card-a" style="--c:var(--b-alumni)"><div class="badge"></div>
+        <div class="top"><span class="dot l-it">Badge blu</span><span class="dot l-fr">Badge bleu</span><h3>Alumni</h3></div>
+        <ul class="l-it"><li>Recruiting diretto: collaboratori, soci, nuovi profili</li><li>Diventare advisor o primo cliente corporate</li><li>Accesso privilegiato al panel</li><li>Networking libero, nessuna barriera di ruolo</li></ul>
+        <ul class="l-fr"><li>Recrutement direct : collaborateurs, associés, nouveaux profils</li><li>Devenir advisor ou premier client corporate</li><li>Accès privilégié au panel</li><li>Networking libre, sans barrière de rôle</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY / ISTITUZIONI -->
+<section id="community" class="inst-band">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label l-it">La community</span><span class="label l-fr">La communauté</span>
+      <h2 class="l-it">Radici francesi, <em>sviluppo italiano.</em></h2>
+      <h2 class="l-fr">Racines françaises, <em>développement italien.</em></h2>
+      <p class="lede l-it">Alumni Grandes Écoles Italia riunisce chi si è formato nelle Grandes Écoles francesi e ha scelto di incontrarsi di persona in Italia. Volontari, senza fini commerciali: nessuno vende spazi sul palco.</p>
+      <p class="lede l-fr">Alumni Grandes Écoles Italia réunit celles et ceux qui ont étudié dans les Grandes Écoles françaises et choisi de se rencontrer en personne en Italie. Bénévoles, sans but commercial : personne ne vend de place sur scène.</p>
+    </div>
+    <div class="schools" aria-label="Grandes Écoles">
+      <span>HEC Paris</span><span>ESSEC</span><span>ESCP</span><span>INSEAD</span><span>NEOMA</span><span class="l-it">e altre Grandes Écoles</span><span class="l-fr">et d'autres Grandes Écoles</span>
+    </div>
+    <div class="bridge">
+      <div class="col">
+        <div class="flagbar" aria-hidden="true"><i style="background:#2A4FA0"></i><i style="background:#F2EEE6"></i><i style="background:#C9483C"></i><i style="background:#F2EEE6"></i><i style="background:#3F9663"></i></div>
+        <h3 class="l-it">Il ponte istituzionale</h3><h3 class="l-fr">Le pont institutionnel</h3>
+        <p class="lede l-it">La community lavora in rapporto con Business France e le istituzioni bilaterali, ed è stata ricevuta a Palazzo Farnese, sede dell'Ambasciata di Francia in Italia, per una cena nella Galleria dei Carracci.</p>
+        <p class="lede l-fr">La communauté travaille en lien avec Business France et les institutions bilatérales. Elle a été reçue au Palais Farnèse, siège de l'Ambassade de France en Italie, pour un dîner dans la Galerie des Carrache.</p>
+      </div>
+      <div class="col">
+        <span class="label l-it">In sala nel 2026</span><span class="label l-fr">Dans la salle en 2026</span>
+        <div class="inroom"><span>CDP Venture Capital</span><span>La French Tech</span><span>Crédit Agricole</span><span>Cariplo Factory</span><span class="l-it">Camera di Commercio Franco-Italiana</span><span class="l-fr">Chambre de Commerce Franco-Italienne</span><span>Business Angels</span><span>Family Office</span><span>Club Deal</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDIZIONE 2026 -->
+<section id="edizioni">
+  <div class="wrap ed">
+    <div class="gallery" aria-label="Galleria edizione 2026">
+      <img class="g a" src="img/sn26_4685.jpg" alt="Apertura della serata davanti allo schermo Alumni Startup Night" loading="lazy">
+      <img class="g b" src="img/sn26_4836.jpg" alt="Pitch di una startup" loading="lazy">
+      <img class="g c" src="img/sn26_4941.jpg" alt="Il pubblico applaude" loading="lazy">
+      <img class="g d" src="img/sn26_5115.jpg" alt="Networking seduti al tavolo" loading="lazy">
+      <img class="g e" src="img/sn26_5104.jpg" alt="Alumni e ospiti durante l'aperinetwork" loading="lazy">
+    </div>
+    <div class="sec-head" style="margin:0">
+      <span class="label l-it">Edizione 2026</span><span class="label l-fr">Édition 2026</span>
+      <h2 class="l-it">Com'è andata <em>a Monte Rosa 91.</em></h2>
+      <h2 class="l-fr">Retour sur <em>Monte Rosa 91.</em></h2>
+      <p class="lede l-it">Il 29 settembre 2026 la Startup Night si è tenuta da Ecooking, nel giardino del campus urbano firmato Renzo Piano Building Workshop, ospiti di BNP Paribas Asset Management.</p>
+      <p class="lede l-fr">Le 29 septembre 2026, la Startup Night s'est tenue chez Ecooking, dans le jardin du campus urbain signé Renzo Piano Building Workshop, à l'invitation de BNP Paribas Asset Management.</p>
+      <dl>
+        <dt>Location</dt><dd>Monte Rosa 91 · Ecooking, Milano</dd>
+        <dt>Partner</dt><dd>BNP Paribas Asset Management</dd>
+        <dt>Format</dt><dd class="l-it">Panel, Lightning Pitch, Aperinetwork</dd><dd class="l-fr">Panel, Lightning Pitch, Apéro-networking</dd>
+      </dl>
+    </div>
+  </div>
+  <div class="wrap recap">
+    <div class="video">
+      <video controls preload="none" playsinline poster="img/sn26_4737.jpg" src="img/sn26_recap_720p.mp4" aria-label="Video recap Startup Night 2026"></video>
+    </div>
+    <div class="strip">
+      <img src="img/sn26_4691.jpg" alt="Apertura con gli organizzatori" loading="lazy">
+      <img src="img/sn26_4918.jpg" alt="Pitch di una founder" loading="lazy">
+      <img src="img/sn26_4942.jpg" alt="Una domanda dalla sala" loading="lazy">
+      <img src="img/sn26_5098.jpg" alt="Conversazione durante il networking" loading="lazy">
+    </div>
+    <p class="credit"><span class="l-it">Video recap 2026 · 1'51"</span><span class="l-fr">Vidéo récap 2026 · 1'51"</span></p>
+  </div>
+</section>
+
+<!-- ACCREDITO -->
+<section id="accredito" class="talks-band">
+  <div class="wrap acc">
+    <div class="sec-head" style="margin:0">
+      <span class="label l-it">Partecipa</span><span class="label l-fr">Participer</span>
+      <h2 class="l-it">L'accesso è <em>su invito.</em></h2>
+      <h2 class="l-fr">L'accès se fait <em>sur invitation.</em></h2>
+      <p class="lede l-it">Sei una startup, un investitore, un coach o vuoi proporre uno speech? Prepara qui la tua richiesta e inviala ad Andrea Campione. Ti ricontattiamo con la data e la conferma dell'accredito.</p>
+      <p class="lede l-fr">Vous êtes une startup, un investisseur, un coach ou vous souhaitez proposer une intervention ? Préparez ici votre demande et envoyez-la à Andrea Campione. Nous revenons vers vous avec la date et la confirmation.</p>
+      <div class="price">
+        <strong>23€</strong>
+        <span class="l-it">Contributo di partecipazione 2026, evento e aperitivo inclusi, richiesto in ingresso. La quota 2027 sarà confermata con la data.</span>
+        <span class="l-fr">Participation 2026, soirée et apéritif compris, réglée à l'entrée. Le tarif 2027 sera confirmé avec la date.</span>
+      </div>
+    </div>
+    <form class="form" id="req" novalidate>
+      <fieldset class="roles">
+        <legend class="label l-it">Partecipo come</legend><legend class="label l-fr">Je participe en tant que</legend>
+        <label style="--c:var(--b-startup)"><input type="radio" name="role" id="r-startup" value="startup" checked><span class="sw"></span>Startup</label>
+        <label style="--c:var(--b-inv)"><input type="radio" name="role" id="r-inv" value="investor"><span class="sw"></span><span class="l-it">Investitore</span><span class="l-fr">Investisseur</span></label>
+        <label style="--c:var(--b-coach)"><input type="radio" name="role" id="r-coach" value="coach"><span class="sw"></span>Coach · Mentor</label>
+        <label style="--c:var(--b-alumni)"><input type="radio" name="role" id="r-speaker" value="speaker"><span class="sw"></span><span class="l-it">Speaker</span><span class="l-fr">Intervenant</span></label>
+      </fieldset>
+      <div class="two">
+        <div class="field"><label for="f-name"><span class="l-it">Nome e cognome</span><span class="l-fr">Nom et prénom</span></label><input id="f-name" autocomplete="name"></div>
+        <div class="field"><label for="f-org"><span class="l-it">Startup / organizzazione</span><span class="l-fr">Startup / organisation</span></label><input id="f-org" autocomplete="organization"></div>
+      </div>
+      <div class="field"><label for="f-msg"><span class="l-it">In due righe: cosa fai e cosa cerchi alla serata</span><span class="l-fr">En deux lignes : ce que vous faites et ce que vous cherchez</span></label><textarea id="f-msg" rows="3"></textarea></div>
+      <button class="btn btn-or" type="submit"><span class="l-it">Prepara la richiesta</span><span class="l-fr">Préparer la demande</span></button>
+      <div class="out" id="out" hidden>
+        <span class="label l-it">Copia il testo e invialo a</span><span class="label l-fr">Copiez le texte et envoyez-le à</span>
+        <span class="mail">andrea.campione@escpalumni.org</span>
+        <pre id="out-text"></pre>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+          <button class="btn btn-ghost" type="button" id="copy"><span class="l-it">Copia testo</span><span class="l-fr">Copier le texte</span></button>
+          <span class="status" id="status" role="status"></span>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- PARTNER -->
+<section id="partner">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label l-it">Partner della serata</span><span class="label l-fr">Partenaire de la soirée</span>
+      <h2 class="l-it">Ospita la prossima <em>Startup Night.</em></h2>
+      <h2 class="l-fr">Accueillez la prochaine <em>Startup Night.</em></h2>
+      <p class="lede l-it">Nessuna sponsorizzazione invasiva: cerchiamo un'azienda che apra i suoi spazi e voglia stare al centro dell'innovazione, davanti a una platea attenta.</p>
+      <p class="lede l-fr">Pas de sponsoring envahissant : nous cherchons une entreprise qui ouvre ses espaces et souhaite être au cœur de l'innovation, face à un public attentif.</p>
+    </div>
+    <div class="partner">
+      <div><h3>Employer branding</h3><p class="l-it">Contatto diretto con profili manageriali, commerciali e tecnici formati nelle Grandes Écoles.</p><p class="l-fr">Contact direct avec des profils managériaux, commerciaux et techniques formés dans les Grandes Écoles.</p></div>
+      <div><h3>Thought leadership</h3><p class="l-it">Il vostro brand come casa della serata, in apertura e nel racconto sui canali della community.</p><p class="l-fr">Votre marque comme maison de la soirée, à l'ouverture et dans les canaux de la communauté.</p></div>
+      <div><h3 class="l-it">Incontri senza intermediari</h3><h3 class="l-fr">Rencontres sans intermédiaire</h3><p class="l-it">Relazioni con founder e decisori in un clima spontaneo, libero da logiche di vendita.</p><p class="l-fr">Des relations avec fondateurs et décideurs dans un climat spontané, libre de toute logique de vente.</p></div>
+    </div>
+    <div class="partner-cta">
+      <p class="lede" style="margin:0"><span class="l-it">Parliamone con Andrea Campione · </span><span class="l-fr">Parlons-en avec Andrea Campione · </span><span class="mail">andrea.campione@escpalumni.org</span></p>
+      <a class="btn btn-ghost" href="#accredito"><span class="l-it">Scrivici</span><span class="l-fr">Écrivez-nous</span> →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="talks-band">
+  <div class="wrap">
+    <div class="sec-head"><span class="label">FAQ</span><h2 class="l-it">Domande <em>frequenti.</em></h2><h2 class="l-fr">Questions <em>fréquentes.</em></h2></div>
+    <div class="faq">
+      <details><summary><span class="l-it">Chi può partecipare?</span><span class="l-fr">Qui peut participer ?</span></summary><p class="l-it">Startup founder, investitori (Business Angels, VC, Family Office, Club Deal), coach, mentor, media e alumni delle Grandes Écoles. L'accesso è su invito e i posti sono limitati.</p><p class="l-fr">Fondateurs de startups, investisseurs (Business Angels, VC, Family Offices, Club Deals), coachs, mentors, médias et alumni des Grandes Écoles. L'accès se fait sur invitation et les places sont limitées.</p></details>
+      <details><summary><span class="l-it">Come viene selezionata una startup per il pitch?</span><span class="l-fr">Comment une startup est-elle sélectionnée pour le pitch ?</span></summary><p class="l-it">Il team organizzativo seleziona 10 startup tra le richieste ricevute. Chi non sale sul palco in questa edizione viene invitato ai prossimi eventi della community.</p><p class="l-fr">L'équipe organisatrice sélectionne 10 startups parmi les demandes reçues. Celles qui ne pitchent pas lors de cette édition sont invitées aux prochains événements de la communauté.</p></details>
+      <details><summary><span class="l-it">Quanto costa?</span><span class="l-fr">Combien ça coûte ?</span></summary><p class="l-it">Nel 2026 il contributo era di 23€, evento e aperitivo inclusi, pagato alla registrazione in ingresso. La quota 2027 sarà comunicata insieme alla data.</p><p class="l-fr">En 2026, la participation était de 23€, soirée et apéritif compris, réglée à l'accueil. Le tarif 2027 sera communiqué avec la date.</p></details>
+      <details><summary><span class="l-it">Come funzionano i badge colorati?</span><span class="l-fr">Comment fonctionnent les badges de couleur ?</span></summary><p class="l-it">Ogni ruolo ha un colore: giallo per le startup, verde per gli investitori, rosso per coach, mentor e media, blu per gli alumni. Così sai subito con chi stai parlando.</p><p class="l-fr">Chaque rôle a sa couleur : jaune pour les startups, vert pour les investisseurs, rouge pour coachs, mentors et médias, bleu pour les alumni. Vous savez tout de suite à qui vous parlez.</p></details>
+      <details><summary><span class="l-it">Posso proporre uno speech?</span><span class="l-fr">Puis-je proposer une intervention ?</span></summary><p class="l-it">Sì. Investitori e coach possono candidarsi come voce esperta del panel su un tema specifico. Scegli «Speaker» nel modulo di richiesta.</p><p class="l-fr">Oui. Investisseurs et coachs peuvent se proposer comme voix experte du panel sur un sujet précis. Choisissez « Intervenant » dans le formulaire.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div style="display:grid;gap:16px;align-content:start">
+        <a href="#top" aria-label="Alumni Startup Night"><svg class="foot-seal" viewBox="0 0 260 260"><use href="#sceau"/></svg></a>
+        <p class="motto">Rencontre · Échanges · Opportunités</p>
+      </div>
+      <div><h4 class="l-it">La serata</h4><h4 class="l-fr">La soirée</h4><a href="#format">Format</a><a href="#speech"><span class="l-it">Speech</span><span class="l-fr">Conférences</span></a><a href="#programma"><span class="l-it">Programma</span><span class="l-fr">Programme</span></a><a href="#faq">FAQ</a></div>
+      <div><h4 class="l-it">Contatti</h4><h4 class="l-fr">Contact</h4><a href="#accredito"><span class="l-it">Richiedi l'accredito</span><span class="l-fr">Accréditation</span></a><a href="#partner"><span class="l-it">Diventa partner</span><span class="l-fr">Devenir partenaire</span></a><span class="mail" style="font-size:.8rem">andrea.campione@escpalumni.org</span></div>
+    </div>
+    <div class="legal"><span>© 2027 Alumni Grandes Écoles Italia</span><span>Milano · Roma · Bologna</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* ---- CONFIG: set the 2027 date here when confirmed, e.g. "2027-09-28T18:30:00+02:00" ---- */
+  var EVENT_DATE = null;
+
+  var body=document.body, bIt=document.getElementById('btn-it'), bFr=document.getElementById('btn-fr');
+  function setLang(l){
+    body.classList.toggle('fr', l==='fr');
+    document.documentElement.lang = l;
+    bIt.setAttribute('aria-pressed', l==='it'); bFr.setAttribute('aria-pressed', l==='fr');
+    try{localStorage.setItem('sn-lang', l)}catch(e){}
+    if(!document.getElementById('out').hidden) build();
+  }
+  bIt.onclick=function(){setLang('it')}; bFr.onclick=function(){setLang('fr')};
+  var start='it'; try{start=localStorage.getItem('sn-lang')||'it'}catch(e){}
+  if(location.hash==='#fr') start='fr';
+  setLang(start);
+
+  // countdown
+  function pad(n){return String(n).padStart(2,'0')}
+  if(EVENT_DATE){
+    var t=new Date(EVENT_DATE).getTime();
+    var note=document.getElementById('cd-note');
+    note.innerHTML='<span class="l-it">'+new Date(t).toLocaleDateString('it-IT',{day:'numeric',month:'long',year:'numeric'})+' · Milano</span><span class="l-fr">'+new Date(t).toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'})+' · Milan</span>';
+    (function tick(){
+      var d=Math.max(0,t-Date.now());
+      document.getElementById('cd-d').textContent=pad(Math.floor(d/864e5));
+      document.getElementById('cd-h').textContent=pad(Math.floor(d/36e5)%24);
+      document.getElementById('cd-m').textContent=pad(Math.floor(d/6e4)%60);
+      document.getElementById('cd-s').textContent=pad(Math.floor(d/1e3)%60);
+      setTimeout(tick,1000);
+    })();
+  }
+
+  // role preselect from CTA
+  document.querySelectorAll('[data-role]').forEach(function(a){
+    a.addEventListener('click',function(){var r=document.querySelector('input[value="'+a.dataset.role+'"]'); if(r) r.checked=true;});
+  });
+
+  // request builder
+  var labels={
+    it:{startup:'Startup',investor:'Investitore',coach:'Coach / Mentor',speaker:'Speaker (proposta di intervento)',subj:'Richiesta accredito Alumni Startup Night 2027',hi:'Buongiorno Andrea,',body:'vorrei partecipare alla Startup Night 2027 come',org:'Organizzazione',bye:'Grazie, a presto.',copied:'Testo copiato. Incollalo in una mail.',sel:'Copia non disponibile qui: il testo è selezionato, usa Ctrl/Cmd+C.'},
+    fr:{startup:'Startup',investor:'Investisseur',coach:'Coach / Mentor',speaker:'Intervenant (proposition de talk)',subj:'Demande d’accréditation Alumni Startup Night 2027',hi:'Bonjour Andrea,',body:'je souhaite participer à la Startup Night 2027 en tant que',org:'Organisation',bye:'Merci, à bientôt.',copied:'Texte copié. Collez-le dans un e-mail.',sel:'Copie indisponible ici : le texte est sélectionné, utilisez Ctrl/Cmd+C.'}
+  };
+  function L(){return body.classList.contains('fr')?labels.fr:labels.it}
+  function build(){
+    var l=L(), role=document.querySelector('input[name=role]:checked').value;
+    var n=document.getElementById('f-name').value.trim(), o=document.getElementById('f-org').value.trim(), m=document.getElementById('f-msg').value.trim();
+    document.getElementById('out-text').textContent=
+      'Oggetto / Objet: '+l.subj+'\n\n'+l.hi+'\n'+l.body+' '+l[role]+'.\n\n'+
+      (o?l.org+': '+o+'\n':'')+(m?m+'\n':'')+'\n'+l.bye+'\n'+(n||'');
+  }
+  document.getElementById('req').addEventListener('submit',function(e){
+    e.preventDefault(); build(); document.getElementById('out').hidden=false; document.getElementById('status').textContent='';
+  });
+  document.getElementById('copy').addEventListener('click',function(){
+    var pre=document.getElementById('out-text'), st=document.getElementById('status');
+    function sel(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);st.textContent=L().sel}
+    try{navigator.clipboard.writeText(pre.textContent).then(function(){st.textContent=L().copied},sel)}catch(e){sel()}
+  });
+})();
+</script>
+
+</body>
+</html>
